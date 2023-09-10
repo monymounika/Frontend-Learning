@@ -1,0 +1,13 @@
+p{
+    border: 1px solid gray;
+    width: 25%;
+    display: inline-block;
+    padding: 20px;
+    border: 20px;
+    border-radius: 20px;
+    text-align: justify;
+    font-family: Comic Sans MS;
+    margin: 20px;
+    color: white;
+    background: linear-gradient(90deg, red, green);
+}

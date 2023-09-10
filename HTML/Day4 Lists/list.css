@@ -1,0 +1,21 @@
+ol,ul{
+    background-color: aqua;
+    width: 15%;
+    display: inline-block;
+    margin: 20px;
+    border: 2px solid yellowgreen;
+    border-radius: 20px;
+}
+
+li{
+    background-color: palevioletred;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+li:hover{
+    background-color: yellow;
+}

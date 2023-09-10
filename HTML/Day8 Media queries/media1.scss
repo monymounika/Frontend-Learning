@@ -1,0 +1,43 @@
+$laptop:1200px;
+$tablet:992px;
+$mobile:768px;
+$color1:#ff0000;
+$color2:#00ff00;
+$color3:#0000ff;
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.text{
+    font-size: 2rem;
+}
+#screen{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50% -50%);
+    font-size: 1.5rem;
+}
+@media (max-width:$laptop){
+    .parent{
+        background-color: $color1;
+    }
+}
+
+@media (max-width:$tablet){
+    .parent{
+        background-color: $color2;
+    }
+}
+
+@media (max-width:$mobile){
+    .parent{
+        background-color: $color3;
+    }
+}

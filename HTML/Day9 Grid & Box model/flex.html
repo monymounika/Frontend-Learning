@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .parent{
+            list-style: none;
+            display: flex;
+            height: 100vh;
+            justify-self: center;
+            align-items: center;
+            gap: 20px;
+        }
+        ul li{
+            border: 1px solid gray;
+            padding: 20px;
+
+        }
+        .c1{
+            order: 1;
+            flex: 1 1 20%;
+        }
+        .c2{
+            order: 2;
+
+        }
+    </style>
+</head>
+<body>
+    <ul class="parent">
+        <li class="c1">one</li>
+        <li class="c1">two</li>
+        <li class="c1">three</li>
+        <li class="c2">four</li>
+        <li>five</li>
+    </ul>
+</body>
+</html>

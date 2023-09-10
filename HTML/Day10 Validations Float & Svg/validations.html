@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Validations</title>
+</head>
+<body>
+    <form name="regFrom">
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td>
+                    <input type="text" name="fname" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile Number</td>
+                <td>
+                    <input type="number" name="Mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="please enter mobile number with above format" >
+                </td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>
+                    <input type="number" name="age" min="18" max="30" placeholder="age should be 18 or less than 30" style="width: 163px;">
+                </td>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td>
+                    <input type="number" name="quantity" value=1 step="2">
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="useremail">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="submit" value="register">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

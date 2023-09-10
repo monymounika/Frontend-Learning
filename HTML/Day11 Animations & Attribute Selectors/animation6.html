@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear and ease Animations</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            animation-name: excelr;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .c1{
+            
+            animation-timing-function: linear;
+        }
+
+        .c2{
+            animation-timing-function: ease;
+        }
+
+        .c3{
+            animation-timing-function: ease-in;/*slow to high*/
+        }
+
+        .c4{
+            animation-timing-function: ease-out;/*high to slow*/
+        }
+
+        .c5{
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes excelr{
+            from{left: 0px;}
+            to{left: 300px;}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="c1">Linear</div>
+    <div class="c2">Ease</div>
+    <div class="c3">Ease-in</div>
+    <div class="c4">Ease-out</div>
+    <div class="c5">Ease-in-out</div>
+</body>
+</html>

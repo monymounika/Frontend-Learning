@@ -1,0 +1,41 @@
+div{
+    border: 1px solid gray;
+    width: 25%;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+
+}
+
+
+.c1{
+    background: linear-gradient(45deg,red,green);
+
+
+}
+
+#id1{
+    background: linear-gradient(45deg,yellow,blue);
+
+}
+
+.c2{
+    background: linear-gradient(45deg,red,cyan);
+}
+
+h1{
+    text-align: center;
+    background-color: greenyellow;
+    color: red;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+p{
+    text-align: justify;
+    font-family: Comic Sans MS;
+}
+

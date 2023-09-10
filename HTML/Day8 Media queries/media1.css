@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.text {
+  font-size: 2rem;
+}
+
+#screen {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50% -50%);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .parent {
+    background-color: #ff0000;
+  }
+}
+@media (max-width: 992px) {
+  .parent {
+    background-color: #00ff00;
+  }
+}
+@media (max-width: 768px) {
+  .parent {
+    background-color: #0000ff;
+  }
+}/*# sourceMappingURL=media1.css.map */

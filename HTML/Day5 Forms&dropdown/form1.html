@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form1</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form  name="Register form">
+        <table>
+            <tr>
+                <td>First name</td>
+                <td>
+                    <input type="text" name="First name" placeholder="please enter first name">
+                </td>
+                <td>
+                    <span>(** please enter first name**)</span>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>Last name</td>
+                <td>
+                    <input type="text" name="lastname" placeholder="please enter last name">
+                </td>
+                <td>
+                    <span>(**please enter last name**)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="text" name="userpassword" placeholder="please enter password">
+                </td>
+                <td>
+                    <span>(**please enter password**)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Confirm Password</td>
+                <td>
+                    <input type="text" name="confirmpassword" placeholder="reenter the password">
+                </td>
+                <td>
+                    <span>(**please reenter the password**)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="useremail" placeholder=" enter mail address">
+                </td>
+                <td>
+                    <span>(**please enter valid email**)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Age</td>
+                <td>
+                    <input type="number" name="userage" placeholder="please enter age">
+                </td>
+                <td>
+                    <span>(**age must be >18 **)</span>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </td>
+                <td>
+                    <span>(**select gender**)</span>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Skills</td>
+                <td>
+                    <input type="checkbox" name="skills" value="c">C 
+                    <input type="checkbox" name="skills" value="c++">C++
+                </td>
+                <td>
+                    <span>(**select skills**)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>per skills</td>
+                <td>
+                    <input type="checkbox" name="skills" value="java">java
+                    <input type="checkbox" name="skills" value="python">python
+                </td>
+                <td>
+                    <span>(**select pref skills**)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>DOB</td>
+                <td>
+                    <input type="date" name="user dob" >
+                </td>
+                <td>
+                    <span>(**enter dob**)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pref Time</td>
+                <td>
+                    <input type="time" name="gender">
+                </td>
+                <td>
+                    <span>(**select time**)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>country</td>
+                <td>
+                    <select name="countries">
+                        <option value="">Select country</option>
+                        <option value="ind">india</option>
+                        <option value="usa">America</option>
+                        <option value="uk">London</option>
+                    </select>
+                </td>
+                <td>
+                    <span>(**select country**)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>fav color</td>
+                <td>
+                    <input type="color" name="favcolor" >
+                </td>
+                <td>
+                    <span>(choose fav color)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>address</td>
+                <td>
+                    <!-- <input type="text" name="address"> -->
+                    <!-- <input type="textarea" name="address"> -->
+                    <textarea name="address" id="" cols="30" rows="10"></textarea>
+                </td>
+                <td>
+                    <span>(**enter address**)</span>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>upload resume</td>
+                <td>
+                    <input type="file" name="resume">
+                </td>
+                <td>(**only pdf files**)</td>
+            </tr>
+            
+
+            <tr>
+                <td>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="cancel">  
+                </td>
+            </tr>
+            <!-- <tr>
+                <td>Company Name</td>
+                <td>
+                    <input type="search" name="Company">
+               
+                </td>
+            </tr> -->
+        </table>
+
+    </form>                                             
+    
+</body>
+</html>

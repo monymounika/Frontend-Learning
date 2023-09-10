@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensions</title>
+    <style>
+       .common{
+        height: 50px;
+        background-color: red;
+        color: white;
+        /* border: 1px solid gray; */
+        margin: 20px;
+       }
+       .parent{
+        width: 300px;
+        border: 1px solid green;
+        padding: 20px;
+        font-size: 30px;
+       }
+       .c1{
+        width: 100px;
+       }
+       .c2{
+        width: 50%;
+       }
+       .c3{
+        font-size: 1rem;
+       }
+       .c4{
+        font-size: 1em;
+       }
+    </style>
+</head>
+<body>
+    <div class="common c1">100px</div>
+    <div class="common  c2">50%</div>
+    <div class="c3">1rem</div>
+    <div class="c4">1em</div>
+    <div class="parent">
+        
+        <div class="common  c1">100px</div>
+        <div class="common  c2">50%</div>
+        <div class="c3">1rem</div>
+        <div class="c4">1em</div>
+    </div>
+</body>
+</html>

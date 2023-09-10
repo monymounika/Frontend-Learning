@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>absolute</title>
+    <style>
+        div{
+            position:relative;/* without this we can't move the child(paragraph)*/
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+
+        }
+        p{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% -50%);/* to move center*/
+        }
+    </style>
+   
+</head>
+<body>
+    <div>
+       <p>excelr</p>
+    </div>
+</body>
+</html>
