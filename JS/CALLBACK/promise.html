@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+<body>
+    <!-- <script>
+        //promise  creation
+        let promise1=new Promise((resolve,reject)=>{
+            resolve("network call success");
+        });
+        //promise consuming==>then=>old approach
+        // promise1.then((posRes)=>{
+        //     document.write(posRes);//network call success
+        // },(errRes)=>{
+        //     document.write(errRes);
+        // })
+
+        //promise consuming=>async &await=>latest approach
+        let res=async ()=>{
+            let res=await promise1;
+            document.write(res);//network call success
+        }
+        res();
+    </script> -->
+
+    <!-- <script>
+        //generate positiveresponse after 5 seconds
+        let promise1=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("welcome to promises with settimeout function");
+            },5000)
+        });
+          // promise1.then((posRes)=>{
+        //     document.write(posRes);
+        // },(errRes)=>{
+        //     document.write(errRes);
+        // })
+
+        //promise consuming=>async &await=>latest approach
+        let consume=async ()=>{
+            let res=await promise1;
+            document.write(res);
+        }
+        consume();
+    </script> -->
+
+    <!-- <script>
+            //generate positiveresponse after 10 seconds
+
+        let promise1=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("welcome to promises with settimeout function");
+            },10000)
+        });
+          // promise1.then((posRes)=>{
+        //     document.write(posRes);
+        // },(errRes)=>{
+        //     document.write(errRes);
+        // })
+
+        //promise consuming=>async &await=>latest approach
+        let consume=async ()=>{
+            let res=await promise1;
+            document.write(res);
+        }
+        consume();
+    </script> -->
+
+    <!-- <script>
+        let promise1=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("promise1")
+            },5000)
+        });
+        let promise2=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("promise2")
+            },10000)
+        })
+    //execute promises one by one
+        // //delay 5 seconds
+        // promise1.then((posRes)=>{
+        //     document.write(posRes);
+        // },(errRes)=>{
+        //     document.write(errRes);
+        // })
+        // //delay 10 seconds
+        // promise2.then((posRes)=>{
+        //     document.write(posRes);
+        // },(errRes)=>{
+        //     document.write(errRes);
+        // })
+
+        //consuming more than 1 promise at a time or execute all promises by using promises chaining
+            // Promise.all([promise1,promise2]).then((posRes)=>{
+            //     document.write(posRes);
+            // },(errRes)=>{
+            //     document.write(errRes);
+            // });
+
+        // to know which promise is executed first or know race in promises
+            Promise.race([promise1,promise2]).then((posRes)=>{
+                // document.write(posRes);
+                console.log(posRes)
+            },(errRes)=>{
+                // document.write(errRes);
+                console.log(errRes);
+            });
+    </script> -->
+
+
+    <!-- <script>
+        let promise1=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("promise1")
+            },5000)
+        });
+        let promise2=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("promise2")
+            },10000)
+        })
+        let promise3=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("promise3")
+            },150000)
+        })
+        // //delay 5 seconds
+        // promise1.then((posRes)=>{
+        //     document.write(posRes);
+        // },(errRes)=>{
+        //     document.write(errRes);
+        // })
+        // //delay 10 seconds
+        // promise2.then((posRes)=>{
+        //     document.write(posRes);
+        // },(errRes)=>{
+        //     document.write(errRes);
+        // })
+         // //delay 15 seconds
+        // promise3.then((posRes)=>{
+        //     document.write(posRes);
+        // },(errRes)=>{
+        //     document.write(errRes);
+        // })
+
+        //consuming more than 1 promise at a time
+            // Promise.all([promise1,promise2,promise3]).then((posRes)=>{
+            //     document.write(posRes);
+            // },(errRes)=>{
+            //     document.write(errRes);
+            // });
+
+        // to know which promise is executed first
+            Promise.race([promise1,promise2,promise3]).then((posRes)=>{
+                // document.write(posRes);
+                console.log(posRes)
+            },(errRes)=>{
+                // document.write(errRes);
+                console.log(errRes);
+            });
+    </script>-->
+
+   <!-- <script>
+        //create two promises
+        //promise1 will execute after 0 sec
+        //promise2 will execute immediately without setTimeout()
+        //consume promise1 & promise2
+        //o/p=>promise2 will execute first
+        let promise1=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("promise1")
+            },)
+        });
+        let promise2=new Promise((resolve,reject)=>{
+            resolve("promise2")
+        })
+       
+        // //delay 5 seconds
+        // promise1.then((posRes)=>{
+        //     document.write(posRes);
+        // },(errRes)=>{
+        //     document.write(errRes);
+        // })
+        // //delay 10 seconds
+        // promise2.then((posRes)=>{
+        //     document.write(posRes);
+        // },(errRes)=>{
+        //     document.write(errRes);
+        // })
+        
+
+        //consuming more than 1 promise at a time
+            // Promise.all([promise1,promise2]).then((posRes)=>{
+            //     document.write(posRes);
+            // },(errRes)=>{
+            //     document.write(errRes);
+            // });
+
+        // to know which promise is executed first
+            // Promise.race([promise1,promise2]).then((posRes)=>{
+            //     // document.write(posRes);
+            //     console.log(posRes)
+            // },(errRes)=>{
+            //     // document.write(errRes);
+            //     console.log(errRes);
+            // });
+    </script>-->
+
+    <!-- <script>
+        let promise1=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("promise1");
+            },5000)
+        });
+        let promise2=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                reject("error");
+            },10000)
+        });
+        let promise3=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("promise3");
+            },15000)
+        });
+
+        //allSettled() method
+        Promise.allSettled([promise1,promise2,promise3]).then((posRes)=>{
+            console.log(posRes);
+        },(errRes)=>{
+            console.log(errRes);
+        });
+    </script> -->
+
+    <!--<script>
+        //create four promises
+        //promises1 should succcess
+        //promises2 should fail
+        //promises3 should succcess
+        //promises4 should fail
+        //apply allSettled() method
+
+        let promise1=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("success");
+            },5000)
+        });
+        let promise2=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                reject("fail");
+            },10000)
+        });
+        let promise3=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("success");
+            },15000)
+        });
+        let promise4=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("fail");
+            },15000)
+        });
+        Promise.allSettled([promise1,promise2,promise3,promise4]).then((posRes)=>{
+            console.log(posRes);
+        },(errRes)=>{
+            console.log(errRes);
+        });
+    </script>-->
+
+    <!-- <script>
+        let addition=(num)=>{
+            return new Promise((resolve,reject)=>{
+                resolve(num+5);
+            });
+        };
+        let consume=async ()=>{
+            let addRes=await addition(5);
+            
+        }
+        consume();
+    </script> -->
+
+    <script>
+        let addition=(num)=>{
+           return new Promise((resolve,reject)=>{
+                 resolve(num+5);
+           });
+        };
+        let subtraction=(num)=>{
+             return new Promise((resolve,reject)=>{
+                 resolve(num-3);
+             })
+        };
+        //multiplication
+        let multiplication=(num)=>{
+             return new Promise((resolve,reject)=>{
+                 resolve(num*2);
+             })
+        };
+
+        //division
+        let division=(num)=>{
+             return new Promise((resolve,reject)=>{
+                 resolve(num/2);
+             })
+        };
+        let consume=async ()=>{
+             let addRes=await addition(5);
+             let subRes=await subtraction(addRes);
+             let mulRes=await multiplication(subRes);
+             let divRes=await division(mulRes);
+             console.log(addRes);
+             console.log(subRes);
+             console.log(mulRes);
+             console.log(divRes);
+
+             
+         };
+        consume();
+     </script>
+
+</body>
+</html> 

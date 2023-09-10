@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Vadilations</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+<body>
+    <form name="regForm" onsubmit="return register()">
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td>
+                    <input type="text" name="fname" placeholder="enter first name">
+                </td>
+                <td>
+                    <span id="fname_errors"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>
+                    <input type="text" name="lname" placeholder="enter last name">
+                </td>
+                <td>
+                    <span id="lname_errors"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="upwd" placeholder="enter password">
+                </td>
+                <td>
+                    <span id="upwd_errors"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td>
+                    <input type="password" name="cupwd" placeholder="enter confirm password">
+                </td>
+                <td>
+                    <span id="cupwd_errors"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="email" placeholder="enter email">
+                </td>
+                <td>
+                    <span id="email_errors"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile Number</td>
+                <td>
+                    <input type="number" name="mobile" placeholder="enter mobile number">
+                </td>
+                <td>
+                    <span id="mobile_errors"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="Gender" value="male" id="male">Male
+                    <input type="radio" name="Gender" value="female" id="female">Female
+                </td>
+                <td>
+                    <span id="gender_errors"></span>
+                </td>
+            </tr>
+          
+            <tr>
+                <td>Languages</td>
+                <td>
+                    <input type="checkbox" name="Languages" value="C" id="c">C Lang
+                    <input type="checkbox" name="Languages" value="C++" id="cpp">Cpp Lang
+                </td>
+                    <td>
+                        <span id="languages_errors"></span>
+                    </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" name="Languages" value="Java" id="java">Java Lang
+                    <input type="checkbox" name="Languages" value="dotnet" id="dotnet">Dotnet Lang
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name="Country" id="country">
+                        <option value="">select country</option>
+                        <option value="ind">India</option>
+                        <option value="usa">USA</option>
+                        <option value="chn">China</option>
+                        <option value="uk">London</option>
+                        <option value="pak">Pakistan</option>
+                    </select>
+                </td>
+                <td>
+                    <span id="country_error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="register">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

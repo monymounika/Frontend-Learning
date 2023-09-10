@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slice</title>
+</head>
+<body>
+    <script>
+//slice()--->extract the particular elements
+let arr1=[10,20,30,40,50,60,70,80,90,100];
+document.write(arr1.slice(0,3),`<br>`);//10,20,30--->0 is included and 3 will be excluded
+document.write(arr1.slice(7,9),`<br>`);//80,90
+document.write(arr1.slice(0,1),`<br>`);//10
+document.write(arr1.slice(9),`<br>`);//100
+
+let arr2=[100,200,300,400,500];
+document.write(arr2.slice(1,3),`<br>`);//200,300
+document.write(arr2.slice(0,1),`<br>`);//100
+document.write(arr2.slice(2,3),`<br>`);//300
+
+let arr3=[10,20,30,40,50,60];
+let x1=arr3.slice(3);
+let y1=arr3.slice(0,3);
+let z1=[...x1,...y1];
+document.write(z1,`<br>`);//40,50,60,10,20,30
+
+
+let arr4=[10,20,30,40,50,60,70,80,90,100];
+let x2=arr4.slice(5);
+let y2=arr4.slice(0,5);
+let z2=[...x2,...y2];
+document.write(z2,`<br>`);//60,70,80,90,100,10,20,30,40,50
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Using Regular Functions
+
+// const str = "welcome to excelR";
+// const word = "excelR";
+// const wordReplace = "Fullstack @ ExcelR"
+
+// function replaceWord (str){
+//     return `${str}`.replace(`${word}`,`${wordReplace}`);
+//     };
+//     console.log(replaceWord(str));
+
+
+// Using Arrow Functions 
+const replaceWord1 = (str, word, wordReplace) => `${str}`.replace(`${word}`, `${wordReplace}`);
+
+const str = "welcome to excelR";
+const word = "excelR";
+const wordReplace = "Fullstack @ ExcelR"
+const result = replaceWord1(str, word, wordReplace)
+console.log(result)
+    </script>
+</body>
+</html>

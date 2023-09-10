@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //for of loop
+        var array9=[100, `hello`, true, undefined, null];
+        for (var a of array9){
+            document.write(a,`<br>`);
+        }
+
+        //for each() loop..
+        var array10=[100, `hello`, true, undefined, null];
+        array10.forEach((element,index)=>{
+            document.write(element,`<br>`);
+        });
+
+        //for loop..
+        var array11=[100, `hello`, true, undefined, null];
+        for(var i=0; i<array11.length; i++){
+            document.write(array11[i],`<br>`);
+        } 
+    </script>
+</body>
+</html>

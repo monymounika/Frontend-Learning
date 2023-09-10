@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find</title>
+</head>
+<body>
+    <script>
+//find()-->used to check/find element available or not
+let arr1=[10,20,30,40,50];
+document.write(arr1.find((element,index)=>{
+    return element==10;
+}));//10
+document.write(arr1.find((element,index)=>{
+    return element==100;
+}));//undefined
+
+
+let arr2=[100,200,300,400,500];
+document.write(arr2.find((element,index)=>{
+    return element==100;
+}));//100
+document.write(arr2.find((element,index)=>{
+    return element==2000;
+}));//undefined
+    </script>
+</body>
+</html>

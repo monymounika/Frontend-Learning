@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+<body>
+    <script>       
+//reduce()-->it is used to find the sum of array elements
+    let arr=[1,2,3,4,5];
+let new_arr=arr.reduce((firstElement,nextElement)=>{
+    return firstElement+nextElement;
+});
+document.write(new_arr);//15
+
+
+let array=[10,20,30,40,50];
+let new_array=array.reduce((firstElement,nextElement)=>{
+    return firstElement+nextElement;
+});
+document.write(new_array);//150
+    </script>
+</body>
+</html>

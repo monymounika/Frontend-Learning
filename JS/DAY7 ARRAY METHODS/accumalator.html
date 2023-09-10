@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accumalator</title>
+</head>
+<body>
+    <script>
+//accumalator method
+let arr=[1,2,3,4,5];
+let res=arr.reduce((firstElement,nextElement)=>{
+    return firstElement+nextElement;
+},85);
+document.write(res);//100
+
+let array=[100,200];
+let res1=array.reduce((firstElement,nextElement)=>{
+    return firstElement+nextElement;
+},700);
+document.write(res1);//1000
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call apply & bind</title>
+</head>
+<body>
+    <script>
+        let obj1={
+            "key1":100
+        };
+        function fun_one(param1,param2){
+            document.write(param1+param2+this.key1);
+        }
+    //call
+        fun_one.call(obj1,200,300);//600
+
+    //apply
+        let arr1=[1,2];
+        fun_one.apply(obj1,arr1);//103
+        
+    //bind
+        let new_location=fun_one.bind(obj1);
+        new_location(1,2);//103
+    </script>
+</body>
+</html>

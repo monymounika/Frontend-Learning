@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+</head>
+<body>
+    <!--used to draw the rectangular box-->
+    <fieldset>
+        <legend>STORAGES(LOCAL/SESSION)</legend>
+        <input type="text" id="uname" placeholder="enter user name"> <br><br>
+        <input type="password" id="upwd" placeholder="enter password"> <br><br>
+        <button onclick="setData()">Set</button>
+        <button onclick="getData()">Read</button>
+        <button onclick="clearData()">Clear</button>
+        <br><br>
+        <p id="res"></p>
+    </fieldset>
+    <script>
+        const setData=()=>{
+            let obj={
+                "uname":document.getElementById("uname").value,
+                "upwd":document.getElementById("upwd").value
+            };        
+        let str=JSON.stringify(obj);
+        //window.localStorage.setItem("login_details",str);
+         window.sessionStorage.setItem("login_details",str);
+
+
+        };
+        const getData=()=>{
+            //let str=window.localStorage.getItem("login_details");
+            let str=window.sessionStorage.getItem("login_details");
+            let obj=JSON.parse(str);
+            document.getElementById("res").innerHTML=obj.uname+"..."+obj.upwd;
+        };
+        const clearData=()=>{
+            //window.localStorage.clear();
+            window.sessionStorage.clear();
+            document.getElementById("res").innerHTML="";
+        };
+    </script>
+</body>
+</html>

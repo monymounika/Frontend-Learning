@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var array1=[10,20,30,40,50];
+        document.write(array1[0],`<br>`);//10
+        document.write(array1[5],`<br>`);
+
+
+        var array2=[`excelr1`,`excelr2`,`excelr3`,`excelr4`,`excelr5`];
+        document.write(array2[0],`<br>`,array2[4],`<br>`);
+
+        //for of loop...
+        var array3=[100,200,300,400,500];
+        for (var x of array3){
+            document.write(x,`<br>`);
+        }
+
+        var array4=[`reactjs`,`nodejs`,`mongodb`,`graphql`,`apollo react`];
+        for (var y of array4){
+            document.write(y,`<br>`);
+        }
+
+        var array5=[10,20,30,40,50];
+        array5.forEach((element,index)=>{
+            document.write(element,`<br>`);
+
+        });
+
+        //for each() loop...
+        var array6=[`reactjs`,`nodejs`,`mongodb`,`graphql`,`apollo react`];
+        array6.forEach((element,index)=>{
+            document.write(element,`<br>`);
+        });
+
+        //for loop...
+        var array7=[10,20,30,40,50];
+        for(var i=0; i<array7.length; i++){ // intiliation; condition; incre or decr
+            document.write(array7[i],`<br>`);
+        }
+
+        var array8=[`reactjs`,`nodejs`,`mongodb`,`graphql`,`apollo react`];
+        for(var i=0; i<array8.length; i++){
+            document.write(array8[i],`<br>`);
+        }
+
+        //for of loop
+        var array9=[100, `hello`, true, undefined, null];
+        for (var a of array9){
+            document.write(a,`<br>`);
+        }
+
+        //for each() loop..
+        var array10=[100, `hello`, true, undefined, null];
+        array10.forEach((element,index)=>{
+            document.write(element,`<br>`);
+        });
+
+        //for loop..
+        var array11=[100, `hello`, true, undefined, null];
+        for(var i=0; i<array11.length; i++){
+            document.write(array11[i],`<br>`);
+        }
+       
+
+        //objects...
+        var obj1={
+            "key1":"Excelr",
+            "key2":"Fullstack"
+        }
+        document.write(obj1.key1,`<br>`,obj1.key2,`<br>`);
+
+        var obj2={
+            "sub_one":"reactjs",
+            "sub_two":"spring boot",
+            "sub_three":"cassandradb"
+        }
+        document.write(obj2.sub_one,`<br>`,obj2.sub_two,`<br>`,obj2.sub_three,`<br>`);
+        
+        //array of object
+        var arrobj1=[{"id":"1","name":"hema","image":"http://reqres.in/img/faces/1-image.jpg"},
+        {"id":"2","name":"mony","image":"http://reqres.in/img/faces/2-image.jpg"},
+        {"id":"3","name":"manu","image":"http://reqres.in/img/faces/3-image.jpg"},
+        {"id":"4","name":"sandeep","image":"http://reqres.in/img/faces/4-image.jpg"},
+        {"id":"5","name":"vamc","image":"http://reqres.in/img/faces/5-image.jpg"}];
+        document.write(`<table border="1"
+                                align="center"
+                                cellspacing="10px"
+                                cellpadding="10px">
+                            <tr>
+                                <th>id</th>
+                                <th>name</th>
+                                <th>image</th>
+                            </tr>`);
+        arrobj1.forEach((element,index)=>{
+            document.write(`<tr>
+                <td>${element.id}</td>
+                <td>${element.name}</td>
+                <td><img src=${element.image} width="50px" height="50px"</td>
+                </tr>`,`<br>`);
+        });
+
+        //ass-1
+        var arrobj2=[{"p_id":111,"p_name":"p_one","p_cost":10000},
+                     {"p_id":222,"p_name":"p_two","p_cost":20000},
+                     {"p_id":333,"p_name":"p_three","p_cost":30000},
+                     {"p_id":444,"p_name":"p_four","p_cost":40000},
+                     {"p_id":555,"p_name":"p_five","p_cost":50000}];
+        document.write(`<table border="1"
+                                align="center"
+                                cellspacing="10px"
+                                cellpadding="10px">
+                            <tr>
+                                <th>p_id</th>
+                                <th>p_name</th>
+                                <th>p_cost</th>
+                            </tr>`);
+            arrobj2.forEach((element,index)=>{
+            document.write(`<tr>
+                <td>${element.p_id}</td>
+                <td>${element.p_name}</td>
+                <td>${element.p_cost}</td>
+                </tr>`);
+            });
+
+
+            var arrobj3=[{"e_id":111,"e_name":"emp_one","e_sal":10000,"e_designation":"jr engr"},
+                     {"e_id":222,"e_name":"emp_two","e_sal":20000,"e_designation":"sr engr"},
+                     {"e_id":333,"e_name":"emp_three","e_sal":30000,"e_designation":"team lead"},
+                     {"e_id":444,"e_name":"emp_four","e_sal":40000,"e_designation":"manager"},
+                     {"e_id":555,"e_name":"emp_five","e_sal":50000,"e_designation":"architect"}];
+        document.write(`<table border="1"
+                                align="center"
+                                cellspacing="10px"
+                                cellpadding="10px">
+                            <tr>
+                                <th>e_id</th>
+                                <th>e_name</th>
+                                <th>e_sal</th>
+                                <th>e_desgination</th>
+                            </tr>`);
+            arrobj3.forEach((element,index)=>{
+            document.write(`<tr>
+                <td>${element.e_id}</td>
+                <td>${element.e_name}</td>
+                <td>${element.e_sal}</td>
+                <td>${element.e_designation}</td>
+                </tr>`);
+            });
+
+
+
+
+        
+    </script>
+</body>
+</html>

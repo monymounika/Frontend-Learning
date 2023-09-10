@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getters</title>
+</head>
+<body>
+    <!-- <script>
+        //to get the data
+        let obj={
+            "key1":100,
+            get fun_one(){
+                return this.key1;
+            },
+            "key2":"hello",
+            get fun_two(){
+                return this.key2;
+            }
+        }
+        console.log(obj.fun_one,obj.fun_two);
+    </script> -->
+
+    <!-- <script>
+        //to set & get the 100
+
+        //to set 100
+        let obj={
+            key1:0,
+            set fun_one(value){
+                this.key1=value;
+            },
+            get fun_one(){
+                return this.key1;
+            }
+        }
+        obj.fun_one=100;
+        console.log(obj.key1);
+        console.log(obj.fun_one);
+    </script> -->
+
+    <script>
+         let obj={
+            num1:0,
+            num2:10,
+            set fun_one(value){
+                this.num1=value;
+            },
+            get fun_one(){
+                return this.num1;
+            },
+
+            set fun_two(value){
+                this.num2=value;
+            },
+            get fun_two(){
+                return this.num2;
+            },
+            
+        }
+        obj.fun_one=1000;
+        obj.fun_two=2000;
+        console.log(obj.num1);
+        console.log(obj.fun_two);
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions</title>
+</head>
+<body>
+    <script>
+        // if(1<2<3){
+        //     document.write("hello");//if the condition is true then only the code will executed otherwise it wont executed 
+        // }
+//IF condition
+        // syntax
+        // if(condition){
+        //     //true block
+        // }
+        
+        // if(true){
+        //     document.write("welcome to if condition");
+        // }
+
+//IF ELSE condition
+
+        //syntax
+        // if(condtion){
+        //     //true block
+        // }else {
+        //     //false block
+        // }
+
+        // let age=10;
+        // if(age>18){
+        //     document.write("eligible for vote");
+        // }else {
+        //     document.write("not eligible");
+        // }
+
+//NESTED IF--else if ladder
+        //to check multiple conditions
+        // let num=100;
+        // if(num>0){
+        //     document.write("condition satisfies","<br>")
+        // }else if(num>10){
+        //     document.write("this condition also satisfied","<br>");
+        // }else if(num>50){
+        //     document.write("this condition also ok","<br>");
+        // }else{
+        //     document.write("not execute");
+        // }//condition satisfies
+
+//SWITCH
+        // switch(new Date().getDay()){//new date is predefined
+        //     case 1:document.write("Monday");
+        //     break;
+        //     case 2:document.write("Tuesday");
+        //     break;
+        //     case 3:document.write("Wednesday");
+        //     break;
+        //     case 4:document.write("Thursday");
+        //     break;
+        //     case 5:document.write("Friday");
+        //     break;
+        //     case 6:document.write("Saturday");
+        //     break;
+        //     case 7:document.write("Sunday");
+        //     break;//Friday
+        // }
+
+//CLOUSER
+    //inner function accesing outer function data
+
+    // const func_one=()=>{
+    //     let x=100;
+    //     let y=200;
+    //     return ()=>{
+    //         console.log(x);
+    //         console.log(y);
+
+    //     }
+    // }
+    // console.dir(func_one());
+
+//CLOUSER with VAR keyword
+    // for(var i=0;i<5;i++){
+    //     console.log(i);
+    // }//0 1 2 3 4
+
+    //print i after 5 seconds
+    // for(var i=0;i<5;i++){
+    //     setTimeout(()=>{
+    //         console.log(i);
+    //     },5000)//after 5seconds=5000
+    // }
+
+    //var keyword wont have the capability to store multiple copies so var keyword has bug to overcome this we use let keyword let is ES6 version and we fix  with IIFE also
+    // for(let i=0;i<5;i++){
+    //     setTimeout(()=>{
+    //         console.log(i);
+    //     },5000)//after 5seconds=5000
+    // }
+
+    //var : 5 5 5 5 5
+    //let : 0 1 2 3 4
+    </script>
+</body>
+</html>

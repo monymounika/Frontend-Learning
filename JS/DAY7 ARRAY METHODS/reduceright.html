@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReduceRight</title>
+</head>
+<body>
+    <script>
+//reduceRight()-->it is used to do the summation/concatnation from right to left
+let arr=["fullstack","to","welcome"];
+let new_arr=arr.reduceRight((firstElement,nextElement)=>{
+    return firstElement+" "+nextElement;
+});
+document.write(new_arr);//welcome to fullstack
+
+
+let array=["excelr","at","mern stack","to","welcome"];
+let new_array=array.reduceRight((firstElement,nextElement)=>{
+    return firstElement+" "+nextElement;
+});
+document.write(new_array);//welcome to mern stack at excelr
+    </script>
+</body>
+</html>

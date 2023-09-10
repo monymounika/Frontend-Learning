@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callbacks</title>
+</head>
+<body>
+    <!-- <script>
+        //syntax
+       const func_one=(param1)=>{                     
+
+        }
+        //function definition
+        const func_two=()=>{
+
+        }
+        func_one(func_two);
+    </script> -->
+
+
+    <!-- <script>
+        let fun_one=(param1)=>{
+                param1();
+        }
+        let fun_two=()=>{
+            document.write("welcome to callbacks");
+        }
+        fun_one(fun_two);
+    </script> -->
+
+    <!-- <script>
+        //create "three" functions
+        //1,network_call  2,success_callback  3,error_callback
+        //success_callback should display "network call success"
+        //error_callback should display "error in network"
+        //pass "success_callback" & "error_callback" definitions to "network_call" parameters
+
+        let network_call=(param1,param2)=>{
+            param1();
+            param2();
+        }
+        let success_callback=()=>{
+            document.write("network call success");
+        }
+        let error_callback=()=>{
+            document.write("error in network");
+        }
+        network_call(success_callback()+error_callback());
+
+    </script> -->
+
+  
+<!-- 
+    <script>
+        let fun_one=(par1,par2)=>{
+            par1();
+            par2();
+        }
+        fun_one(()=>{
+            document.write("welcome");
+        },()=>{
+            document.write("hello");
+        });
+    </script> -->
+
+    
+    <!-- <script>
+        //pass three arrow functions to "network_call" function parameters
+
+        let fun_one=(par1,par2,par3)=>{
+            par1();
+            par2();
+            par3();
+        }
+        fun_one(()=>{
+            document.write("welcome");
+        },()=>{
+            document.write("hello");
+        },()=>{
+            document.write("network");
+        });
+    </script> -->
+
+    <!-- <script>
+        let fun_one=(param1)=>{
+            let res=param1();
+            return res;
+        }
+        let res1=fun_one(()=>{
+            return "welcome to callbacks";
+        });
+        document.write(res1);
+    </script> -->
+
+    <!-- <script>
+        let fun_one=(param1)=>{
+            let res=param1();
+            return res;
+        }
+        let res1=fun_one(()=>{
+            return 100;
+        });
+        
+        document.write(res1);
+    </script> -->
+
+
+    <!-- <script>
+        //pass "two arrow functions" definitions to "my_func" 
+        //first arrow function should return 100
+        //second arrow function should return 200
+        //"my_func" should return 300
+        //print the result
+
+        let fun_one=()=>{
+            return 100;
+        }
+        let fun_two=()=>{
+            return 200;
+        }
+        let my_func=()=>fun_one()+fun_two();
+        let res=my_func();
+        document.write(res);
+    </script> -->
+
+
+    <!-- <script>
+        //addition 
+        
+        let addition=(num,callback)=>{
+            return callback(num+5,false);
+        }
+        addition(5,(addRes,error)=>{
+            if (!error){
+                document.write(addRes);
+            }
+        });
+
+    </script> -->
+
+    <!-- <script>
+        //addition substraction multiplication division
+
+        let addition=(num,callback)=>{
+            return callback(num+5,false);
+        }
+        let substraction=(num,callback)=>{
+            return callback(num-3,false);
+        }
+        let multipliation=(num,callback)=>{
+            return callback(num*2,false);
+        }
+        let division=(num,callback)=>{
+            return callback(num/2-2,false);
+        }
+        addition(5,(addRes,error)=>{//10
+            if (!error){
+                substraction(addRes,(subRes,error)=>{//10-3=7
+                        if(!error){
+                            multipliation(subRes,(multipliation,error)=>{//7*2=14
+                                if(!error){
+                                    division(multipliation,(divisionRes,error)=>{//14/2=7=>7-2=5
+                                        if(!error){
+                                            document.write(divisionRes);//5
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+
+    </script> -->
+
+
+</body>
+</html>

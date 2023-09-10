@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reverse</title>
+</head>
+<body>
+    <script>
+        //reverse-->used to reverse array element
+        let arr=[10,20,30,40,50];
+        document.write(arr.reverse());//50,40,30,20,10
+
+        let arr1=[`react`,`angular`,`vuejs`];
+        document.write(arr1.reverse());//vuejs,angular,react
+
+        // console.log(Array.from("excelr").reverse().toString().replace(/,/g,""));
+
+
+
+        
+        let array=["welcome","to","fullstack"];
+        let new_arr=array.map((element,index)=>{
+
+          return  Array.from(element).reverse().toString().replace(/,/g,"");
+        });
+        document.write(new_arr)//emoclew,ot,kcatslluf
+
+        let str="hello";
+        let str1=str.split("").reverse().join("");
+        document.write(str1,`<br>`);//olleh
+
+        
+
+        let mystr="welcome to java";
+        let str2=mystr.split("").reverse().join("");
+        document.write(str2);//olleh
+
+        
+    </script>
+</body>
+</html>

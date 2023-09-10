@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up</title>
+</head>
+<body>
+<!--pop up-->
+    <!-- <button onclick="func_one()">Alert</button>
+
+    <script>
+        const func_one=()=>{
+            alert("welcome to excelr");/*alert gives the popup*/
+        }
+    </script> -->
+
+<!--prompt-->
+    <!-- <button onclick="func_one()">Prompt</button><br><br>
+    <p id="res"></p>
+
+    <script>
+        const func_one=()=>{
+            let x= prompt("enter data");
+            document.getElementById("res").innerHTML=x;
+        }
+    </script> -->
+
+<!--confirm=true/false 
+    when we click ok it returns true when we click cancel it returns false-->
+    <button onclick="func_one()">Confirm</button><br><br>
+    <p id="res"></p>
+
+    <script>
+        const func_one=()=>{
+            let res= confirm("do you want to insert data into LocalStorage");
+            document.getElementById("res").innerHTML=""+res;
+        }
+    </script>
+</body>
+</html>

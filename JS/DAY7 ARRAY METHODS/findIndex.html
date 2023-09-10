@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>findIndex</title>
+</head>
+<body>
+    <script>
+//findIndex()-->used to find the index of array element
+
+let arr1=[10,20,30,40,50];
+let i1=arr1.findIndex((element,index)=>{
+    return element==10;
+});
+document.write(i1);//0
+
+let arr2=[10,20,30,40,50];
+let i2=arr2.findIndex((element,index)=>{
+    return element==20;
+});
+document.write(i2);//1
+
+let arr3=[10,20,30,40,50];
+let i3=arr3.findIndex((element,index)=>{
+    return element==30;
+});
+document.write(i3);//2
+
+let arr4=[10,20,30,40,50];
+let i4=arr4.findIndex((element,index)=>{
+    return element==40;
+});
+document.write(i4);//3
+
+let arr5=[10,20,30,40,50];
+let i5=arr5.findIndex((element,index)=>{
+    return element==50;
+});
+document.write(i5);//4
+    </script>
+</body>
+</html>

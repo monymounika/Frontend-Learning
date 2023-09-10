@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immutability (copy)</title>
+</head>
+<body>
+    <!-- <script>
+        let obj={
+            "key1":"hello"
+        }
+    let obj1={...obj};//...=>calling the obj 
+    obj.key2="welcome";
+    obj1.key2="excelr";
+    console.log(obj);
+    console.log(obj1);
+    </script> -->
+
+    <script>
+        let arr1=[10,20,30,40,50];
+        let arr2=[...arr1];
+
+        arr1.push(60);
+        arr2.pop();
+        console.log(arr1);//[10, 20, 30, 40, 50, 60]
+        console.log(arr2);//[10, 20, 30, 40]
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Declaration</title>
+</head>
+<body>
+    <script>
+        //syntax -->function with particular name
+            //    function functionname(par1,par2,....,parn){
+            //      busines logic
+            //     } 
+            //     //call the function
+            //    functionname(arg1,arg2,...,argn);
+
+            //example-1
+            function func_one(){
+                document.write(`welcome to function declaration`,`<br>`);
+            }
+            func_one();
+
+            //example-2
+            function demo_func(){
+                document.write(`welcome to fullstack`,`<br>`);
+            }
+            demo_func();
+
+             //example-3
+             function fun_one(par1,par2,par3){
+                document.write(par1,`<br>`,par2,`<br>`,par3,`<br>`);
+            }
+            fun_one(100,200,300);
+            fun_one(`react js`,`node js`,`express js`);
+            fun_one();
+            fun_one(undefined,`hello`);
+            fun_one(10,20,30,40);
+            fun_one(null,null,null);
+
+            //example-4
+            function fun(){
+                return 100;
+            }
+            let res=fun();
+            document.write(res,`<br>`);
+    </script>
+</body>
+</html>

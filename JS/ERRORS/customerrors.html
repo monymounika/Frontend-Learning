@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom errors</title>
+</head>
+<body>
+    <script>
+        function division(num1,num2){
+            if(num2===0){
+                throw new Error("excelr raised this error");
+            }else{
+                return num1/num2
+            }
+        }
+
+        // try{
+        //     let res=division(10,20);
+        //     document.write(res);
+        // }
+        // catch(err){
+        //     document.write(err.message);//0.5
+        // }
+
+        
+        try{
+            let res=division(10,0);
+            document.write(res);
+        }
+        catch(err){
+            document.write(err.message);//excelr raised this error
+        }
+    </script>
+</body>
+</html>

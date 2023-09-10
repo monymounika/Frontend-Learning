@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="func_one()">Button1</button>
+    <script>
+        let func_one=()=>{
+            console.log("button clicked");
+        }
+    </script> -->
+
+    <!-- <button>Button1</button>
+    <script>
+        let btn=document.querySelector("button");
+        btn.onclick=func_one;
+        function func_one(){
+            console.log("button clicked")
+        }
+    </script> -->
+
+     <button>Button1</button>
+    <script>
+        let btn=document.querySelector("button");
+        btn.addEventListener("click",func_one);
+        function func_one(){
+            console.log("button clicked");
+        }
+        // btn.remove
+
+        
+    </script>
+</body>
+</html>

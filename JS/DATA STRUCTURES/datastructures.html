@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data structures</title>
+</head>
+<body>
+    <!-- <script>
+    // JavaScript supports 4 Data Structures
+        //1.map
+        //2.weakmap
+        //3.set
+        //4.weakset
+
+        let map=new Map();
+        console.dir(map);
+
+        map.set("key1","excelr1");
+        map.set("key2","excelr2");
+        console.log(map);
+        console.log(map.get("key1"));
+        console.log(map.get("key2"));
+
+        for(let [key,value] of map){
+            console.log(key,value);
+        }
+
+        map.delete("key1");
+        console.log(map);
+        console.log(map.has("key1"));
+
+        map.clear();
+        console.log(map);
+
+        console.log(map.size);
+
+        console.log(map.values());
+
+
+    </script> -->
+
+    <!-- <script>
+        // it won't allow duplicate keys instead of that old value updated with the new value
+        let map=new Map();
+        map.set("key1","excelr1");
+        map.set("key1","excelr2");
+        console.log(map);
+    </script> -->
+
+    <!-- <script>
+        //it allows duplicate values
+        let map=new Map();
+        map.set("key1","excelr1");
+        map.set("key2","excelr1");
+        console.log(map);
+    </script> -->
+
+    <!-- <script>
+        //weakmap allows only objects as keys
+        let weakMap=new WeakMap();
+        weakMap.set({},"Hello");
+        console.log(weakMap);
+
+    </script> -->
+
+    <!-- <script>
+        //map allows all data types as keys
+        let map=new Map();
+        map.set("str","hello");
+        map.set(100,1000);
+        map.set(true,false);
+        map.set(undefined,"hello");
+        map.set(null,"hello");
+        map.set([],"hello");
+        map.set({},"hello");
+        console.log(map);
+    </script> -->
+
+    <!-- <script>
+        let set=new Set();
+        console.dir(set);
+
+        set.add("excelr1");
+        set.add(100);
+        set.add(true);
+        set.add(undefined);
+        set.add(null);
+        set.add([100,200,300]);
+        set.add({"key1":"value1","key2":"value2"});
+        console.log(set);
+
+        for(let data of set){
+            console.log(data)
+        }
+        console.log(set.size);
+    </script> -->
+
+    <!-- <script>
+        //set won't allows duplicate values
+        let set=new Set();
+        set.add(100);
+        set.add(100);
+        console.log(set);
+    </script> -->
+
+    <!-- <script>
+        //it allows only object 
+        let weakset=new WeakSet();
+        weakset.add({"key1":"hello"});
+        console.log(weakset);
+    </script> -->
+
+    <!-- <script>
+        //it will remove duplicate values
+        let arr1=[10,20,10,30,20];
+        let set=new Set(arr1);
+        console.log(set);
+    </script> -->
+
+    <script>
+        let obj={};
+        let key1={};
+        let value1="hello";
+        obj[key1]=value1;
+
+        let key2={"m":"v"};
+        let value2="welcome";
+        obj[key2]=value2;
+        
+        console.log(obj);
+    </script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+    <script>
+    //example-1
+        //---funcion declaration---
+        // function demo_fun(par1,par2,par3,par4){
+        //     document.write(par1,`<br>`,par2,`<br>`,par3,`<br>`,par4,`<br>`);
+        // }
+        // demo_fun(`react js`,`node js`,`express js`,`apollo js`);
+        // demo_fun();
+        // demo_fun(`undefined`,`undefined`,`undefined`,`undefined`,100);
+        // demo_fun(null,null,`hello`,null,"welcome");
+
+        //---funcion expression--
+        // let  demo_fun=function(par1,par2,par3,par4){
+        //     document.write(par1,`<br>`,par2,`<br>`,par3,`<br>`,par4,`<br>`);
+        // }
+        // demo_fun(`react js`,`node js`,`express js`,`apollo js`);
+        // demo_fun();
+        // demo_fun(`undefined`,`undefined`,`undefined`,`undefined`,100);
+        // demo_fun(null,null,`hello`,null,"welcome");
+
+        
+        //---arrow funcion--
+        // let  demo_fun=(par1,par2,par3,par4)=>{
+        //     document.write(par1,`<br>`,par2,`<br>`,par3,`<br>`,par4,`<br>`);
+        // }
+        // demo_fun(`react js`,`node js`,`express js`,`apollo js`);
+        // demo_fun();
+        // demo_fun(`undefined`,`undefined`,`undefined`,`undefined`,100);
+        // demo_fun(null,null,`hello`,null,"welcome");
+        
+    //example-2
+        //---function declaration---
+        // function fun_one(par1){
+        //     return par1*par1;
+        // }
+        // let res1=fun_one(10);
+        // document.write(res1,'<br>');
+        // let res2=fun_one(100);
+        // document.write(res2);
+
+        //---function expression---
+        // let fun_one=function(par1){
+        //     return par1*par1;
+        // }
+        // let res1=fun_one(10);
+        // document.write(res1,'<br>');
+        // let res2=fun_one(100);
+        // document.write(res2);
+
+
+        //---arrow function---
+        // let fun_one=(par1)=>{
+        //     return par1*par1;
+        // }
+        // let res1=fun_one(10);
+        // document.write(res1,'<br>');
+        // let res2=fun_one(100);
+        // document.write(res2);
+
+    
+    //example-3
+        //---function declaration---
+        // function fun_one(){
+        //     return "excelr";
+        // }
+        // let res=fun_one();
+        // document.write(res);
+
+
+        //---function expression---
+        //    let fun_one=function(){
+        //         return "excelr";
+        //     }
+        //     let res=fun_one();
+        //     document.write(res);
+        
+
+        //---arrow function---
+        // let fun_one=()=>{
+        //     return "excelr";
+        // }
+        // let res=fun_one();
+        // document.write(res);
+
+
+    //example-4
+        //---function declaration---
+        // function fun_one(par1){
+        //     return `welcome to ${par1}`;
+        // }
+        // let res1=fun_one(`excelr`);
+        // document.write(res1,`<br>`);
+        // let res2=fun_one(`fullstaclk`);
+        // document.write(res2);
+
+
+        //---function expression---
+        // let fun_one=function(par1){
+        //     return `welcome to ${par1}`;
+        // }
+        // let res1=fun_one(`excelr`);
+        // document.write(res1,`<br>`);
+        // let res2=fun_one(`fullstaclk`);
+        // document.write(res2);
+
+        //---arrow function---
+        // let fun_one=(par1)=>{
+        //     return `welcome to ${par1}`;
+        // }
+        // let res1=fun_one(`excelr`);
+        // document.write(res1,`<br>`);
+        // let res2=fun_one(`fullstaclk`);
+        // document.write(res2);
+
+
+    //example-5
+        //---function declaration --
+        //     function fun_one(){
+        //         return true;
+        //     }
+        //     let res=fun_one();
+        //    res?document.write(`excelr`):document.write(`java`);
+
+
+        //---function expression---
+        //     let fun_one=function(){
+        //         return true;
+        //     }
+        //     let res=fun_one();
+        //    res?document.write(`excelr`):document.write(`java`);
+
+        // let fun_one=()=>{
+        //         return true;
+        //     }
+        //     let res=fun_one();
+        //    res?document.write(`excelr`):document.write(`java`);
+
+
+    //example-6
+        //---arrow function with forEach loop---
+        // let fun_one=()=>{
+        //     return [10,20,30,40,50];
+        // }
+        // let arr=fun_one();
+        // arr.forEach((element,index)=>{
+        //     document.write(element,`<br>`);
+        // });
+
+
+        //---function expression with forEach loop---
+        // let fun_one=function(){
+        //     return [10,20,30,40,50];
+        // }
+        // let arr=fun_one();
+        // arr.forEach((element,index)=>{
+        //     document.write(element,`<br>`);
+        // });
+         
+
+        //---function declaration with forEach loop---
+        // function fun_one(){
+        //     return [10,20,30,40,50];
+        // }
+        // let arr=fun_one();
+        // arr.forEach((element,index)=>{
+        //     document.write(element,`<br>`);
+        // });
+
+
+        //---function expression with for of loop---
+        //  let fun_one=function(){
+        //     return [10,20,30,40,50];
+        // }
+        // let arr=fun_one();
+        // for (var x of arr){
+        //     document.write(x,`<br>`);
+        // }
+
+
+        //function expression with  for loop--
+        //  let fun_one=function(){
+        //     return [10,20,30,40,50];
+        // }
+        // let arr=fun_one();
+        // for(var i=0; i<arr.length; i++){
+        //     document.write(arr[i],`<br>`);
+        // }
+
+
+    //example-7
+        //---arrow function with object---
+        // let fun_one=()=>{
+        //     return {
+        //         key1:`reactjs`,
+        //         key2:`nodejs`,
+        //         key3:`expressjs`
+        //     };
+        // }
+        // let obj=fun_one();
+        // document.write(obj.key1,obj.key2,obj.key3);
+
+
+        //---function declaration with object---
+        // let fun_one=function(){
+        //     return {
+        //         key1:`reactjs`,
+        //         key2:`nodejs`,
+        //         key3:`expressjs`
+        //     };
+        // }
+        // let obj=fun_one();
+        // document.write(obj.key1,`<br>`,obj.key2,`<br>`,obj.key3);
+
+
+        //---function declaration with object---
+        // function fun_one(){
+        //     return {
+        //         key1:`reactjs`,
+        //         key2:`nodejs`,
+        //         key3:`expressjs`
+        //     };
+        // }
+        // let obj=fun_one();
+        // document.write(obj.key1,`<br>`,obj.key2,`<br>`,obj.key3);
+
+    </script>
+</body>
+</html>

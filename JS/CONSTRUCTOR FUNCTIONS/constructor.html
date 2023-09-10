@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor functions</title>
+</head>
+<body>
+<!--oojs-onject oriented java script-->
+    <!-- <script>
+        function class_one(){
+            this.var_one="Hello";
+            this.var_two="Welcome";
+            this.var_three="ReactJs";
+        }
+        let p1=new class_one();
+        document.write(p1.var_one, p1.var_two, p1.var_three,"<br>");
+
+        let p2=new class_one();
+        document.write(p2.var_three,"<br>");
+
+        let p3=new class_one();
+        document.write(p3.var_two);
+    </script> -->
+
+    <!-- <script>
+        function class_two(){
+            this.sub_one="ReactJs";
+            this.sub_two="NodeJs";
+            this.sub_three="MongoDB";
+        }
+        let p1=new class_two();
+        document.write(p1.sub_one, p1.sub_two, p1.sub_three,"<br>");
+
+        let p2=new class_two();
+        document.write(p2.sub_three,"<br>");
+
+        let p3=new class_two();
+        document.write(p3.sub_two);
+    </script> -->
+
+    <!-- <script>
+        function class_one(){
+            this.func_one=function(){
+                return "Hello";
+            }
+            this.func_two=function(){
+                return "Welcome";
+            }
+        }
+        let obj=new class_one();
+        let x=obj.func_one();
+        let y=obj.func_two();
+        document.write(x,y);
+    </script> -->
+
+    <!-- <script>
+        function class_two(){
+            this.func_one=function(){
+                return "ReactJs";
+            }
+            this.func_two=function(){
+                return "NodeJs";
+            }
+            this.func_three=function(){
+                return "MongoDB";
+            }
+        }
+        let obj=new class_two();
+        let x=obj.func_one();
+        let y=obj.func_two();
+        let z=obj.func_three();
+        document.write(x,y,z);
+    </script> -->
+
+    <!-- <script>
+        function class_one(){
+            this.var_one="Hello";
+            this.func_one=function(){
+                return this.var_one;
+            }
+        }
+        let obj=new class_one();
+        // document.write(obj.func_one());
+        let x=obj.func_one();
+        document.write(x);
+    </script> -->
+
+    <!-- <script>
+        //create class_two
+        //declare three variablea and three functions inside class_two
+        //functions should return variables
+        //create object to the class
+        //call the functions
+        function class_two(){
+            this.var_one="ReactJs";
+            this.func_one=function(){
+                return this.var_one;
+            }
+            this.var_two="NodeJs";
+            this.func_two=function(){
+                return this.var_two;
+            }
+            this.var_three="MongoDB";
+            this.func_three=function(){
+                return this.var_three;
+            }
+        }
+        let obj=new class_two();
+        let x=obj.func_one();
+        document.write(x);
+        let y=obj.func_two();
+        document.write(y);
+        let z=obj.func_three();
+        document.write(z);
+    </script> -->
+
+    <!-- <script>
+        function class_one(){}
+            class_one.prototype.var_one="Hello"
+            class_one.prototype.var_two="Welcome"
+            let obj=new class_one();
+            document.write(obj.var_one,obj.var_two);
+    </script> -->
+
+    <!-- <script>
+        //create class_two
+        //add three variables with prototype
+        function class_two(){}
+            class_two.prototype.var_one="Hello"
+            class_two.prototype.var_two="Welcome"
+            class_two.prototype.var_three="reactjs"
+            let obj=new class_two();
+            document.write(obj.var_one,obj.var_two,obj.var_three);
+    </script> -->
+    
+    <!-- <script>
+        function class_one(){}
+
+        class_one.prototype.func_one=function(){
+            return "Hello";
+        }
+        class_one.prototype.func_two=function(){
+            return "Welcome";
+        }
+        let obj=new class_one();
+        let x= obj.func_one()
+        let y= obj.func_two()
+        document.write(x,y);
+    </script> -->
+
+    <!-- <script>
+        //create class two
+        //add three functions with prototype
+        function class_two(){}
+        class_two.prototype.func_one=function(){
+            return "Hello";
+        }
+        class_two.prototype.func_two=function(){
+            return "Welcome";
+        }
+        class_two.prototype.func_three=function(){
+            return "function 3";
+        }
+        let obj=new class_two();
+        let x= obj.func_one()
+        let y= obj.func_two()
+        let z= obj.func_three()
+        document.write(x,y,z);
+    </script> -->
+
+    <!-- <script>
+        //how to creat reltionship
+        function class_one(){}
+        class_one.prototype.var_one="Hello";//parent data
+
+        function class_two(){}
+        class_two.prototype=Object.create(class_one.prototype);//child data ---parent data by default availble on child class
+        class_two.prototype.var_two="Welcome";
+
+        let obj=new class_two();
+        document.write(obj.var_one,obj.var_two);
+    </script> -->
+
+    <!-- <script>
+        //create relationship between three classes
+        function class_one(){}
+        class_one.prototype.var_one="Hello";//parent data
+
+        function class_two(){}
+        class_two.prototype=Object.create(class_one.prototype);//child data ---parent data by default availble on child class
+        class_two.prototype.var_two="Welcome";
+
+        function class_three(){}
+        class_three.prototype=Object.create(class_two.prototype);//child data ---parent data by default availble on child class
+        class_three.prototype.var_three="relationship";
+
+        let obj=new class_three();
+        document.write(obj.var_one,obj.var_two,obj.var_three);
+    </script> -->
+
+    <!-- <script>
+        //create relationship between four classes
+        function class_one(){}
+        class_one.prototype.var_one="Hello";//parent data
+
+        function class_two(){}
+        class_two.prototype=Object.create(class_one.prototype);//child data ---parent data by default availble on child class
+        class_two.prototype.var_two="create";
+
+        function class_three(){}
+        class_three.prototype=Object.create(class_two.prototype);//child data ---parent data by default availble on child class
+        class_three.prototype.var_three="relationship";
+
+        function class_four(){}
+        class_four.prototype=Object.create(class_three.prototype);//child data ---parent data by default availble on child class
+        class_four.prototype.var_four="between four classes";
+
+        let obj=new class_four();
+        document.write(obj.var_one,obj.var_two,obj.var_three,obj.var_four);
+    </script> -->
+
+    <!-- <script>
+        function class_one(){}
+        class_one.prototype.func_one=function(){
+            return "Hello";
+        }
+
+        function class_two(){}
+            class_two.prototype=Object.create(class_one.prototype);
+            class_two.prototype.func_two=function(){
+                return "Welcome";
+            }
+        let obj=new class_two();
+        document.write(obj.func_one());
+        document.write(obj.func_two());
+    </script> -->
+
+    <!-- <script>
+        //create relationship between three classes
+        function class_one(){}
+        class_one.prototype.func_one=function(){
+            return "Hello";
+        }
+
+        function class_two(){}
+            class_two.prototype=Object.create(class_one.prototype);
+            class_two.prototype.func_two=function(){
+                return "Welcome";
+            }
+            function class_three(){}
+            class_three.prototype=Object.create(class_two.prototype);
+            class_three.prototype.func_three=function(){
+                return "Bye";
+            }
+        let obj=new class_three();
+        document.write(obj.func_one());
+        document.write(obj.func_two());
+        document.write(obj.func_three());
+    </script> -->
+
+    <!-- <script>
+        //create relationship between four classes
+        function class_one(){}
+        class_one.prototype.func_one=function(){
+            return "create";
+        }
+
+        function class_two(){}
+            class_two.prototype=Object.create(class_one.prototype);
+            class_two.prototype.func_two=function(){
+                return "relationship";
+            }
+            function class_three(){}
+            class_three.prototype=Object.create(class_two.prototype);
+            class_three.prototype.func_three=function(){
+                return "between";
+            }
+            function class_four(){}
+            class_four.prototype=Object.create(class_three.prototype);
+            class_four.prototype.func_four=function(){
+                return "four classes";
+            }
+        let obj=new class_four();
+        document.write(obj.func_one());
+        document.write(obj.func_two());
+        document.write(obj.func_three());
+        document.write(obj.func_four());
+    </script> -->
+
+    <!-- <script>
+        //parent class funtionality replaced with child class functionality(hello will be deleted and updated with Welcome==overriding)
+        function class_one(){}
+        class_one.prototype.func_one=function(){//func_one=parent class
+            return "Hello";
+        }
+
+        function class_two(){}
+        class_two.prototype=Object.create(class_one.prototype);//relationship
+        class_two.prototype.func_one=function(){//func_one=child class
+            return "Welcome";
+        }
+        let obj=new class_two();
+        let x=obj.func_one();
+        document.write(x);
+    </script> -->
+</body>
+</html>

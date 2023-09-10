@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!-- <script>
+        function *generator_func(){
+            yield "ExcelrR1";
+            yield "ExcelrR2";
+            yield "ExcelrR3";
+        }
+        let cursor=generator_func();
+        let x=cursor.next();
+        let y=cursor.next();
+        let z=cursor.next();
+        document.write(JSON.stringify(x),JSON.stringify(y),JSON.stringify(z));
+    </script> -->
+
+    <!-- <script>
+        function *generator_func(){
+            yield "ReactJs";
+            yield "NodeJs";
+            yield "MongoDB";
+            yield "ExpressJs";
+            yield "VueJs";
+        }
+        let cursor=generator_func();
+        let a=cursor.next();
+        let b=cursor.next();
+        let c=cursor.next();
+        let d=cursor.next();
+        let e=cursor.next();
+        document.write(JSON.stringify(a),JSON.stringify(b),JSON.stringify(c),JSON.stringify(d),JSON.stringify(e));
+    </script> -->
+
+    <!-- <script>
+        function *func_one(){
+        yield "Excelr1";
+        yield *func_three();
+        yield *func_two();
+        yield "Excelr4";
+    }
+    function *func_three(){
+        yield "Excelr3";
+    }
+    function *func_two(){
+        yield "Excelr2";
+    }
+    let c=func_one();
+    document.write(JSON.stringify(c.next()));
+    document.write(JSON.stringify(c.next()));
+    document.write(JSON.stringify(c.next()));
+    document.write(JSON.stringify(c.next()));
+    document.write(JSON.stringify(c.next()));
+    </script> -->
+
+    <!-- <script>
+        function *func_one(){
+        yield "Excelr1";
+        yield *func_three();
+        yield *func_two();
+        yield *func_four();
+        yield "Excelr4";
+    }
+    function *func_three(){
+        yield "Excelr3";
+    }
+    function *func_two(){
+        yield "Excelr2";
+    }
+    function *func_four(){
+        yield "Excelr5";
+    }
+    let c=func_one();
+    document.write(JSON.stringify(c.next()));
+    document.write(JSON.stringify(c.next()));
+    document.write(JSON.stringify(c.next()));
+    document.write(JSON.stringify(c.next()));
+    document.write(JSON.stringify(c.next()));
+    document.write(JSON.stringify(c.next()));
+    </script> -->
+
+    <!-- <script>
+        //generator function with return keyword
+        //after return keyword whatever keyword is there they never excute
+        function *func_one(){
+            yield 100;
+            yield 200;
+            yield 300;
+            yield 400;
+            return 500;
+            yield 600;
+        }
+        let cursor=func_one();
+        for(let i=0;i<6;i++){
+            document.write(JSON.stringify(cursor.next()));
+        }
+    </script> -->
+
+    <!-- <script>
+        //while loop also we can control generator functions not only while any loop we can control generator functions
+        function *func_one(param1){
+        let i=0;
+        while(i<param1){
+            yield i;
+            i++;
+        }
+    }
+    let cursor=func_one(5);
+    document.write(cursor.next().value);
+    document.write(cursor.next().value);
+    document.write(cursor.next().value);
+    document.write(cursor.next().value);
+    document.write(cursor.next().value);
+    </script> -->
+</body>
+</html>

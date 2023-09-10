@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        #parent{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        #child{
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            margin-left: 25px;
+            margin-top: 50px;
+        }
+        #subchild{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            <div id="subchild"></div>
+
+        </div>
+    </div>
+
+    <script>
+        // let p=document.getElementById("parent");
+        // p.addEventListener("click",(event)=>{
+        //     console.log("parent clicked")
+        // })
+
+        // let c=document.getElementById("child");
+        // c.addEventListener("click",(event)=>{
+        //     console.log("child clicked")
+        // })
+
+        // let s=document.getElementById("subchild");
+        // s.addEventListener("click",(event)=>{
+        //     console.log("subchild clicked")
+        // })
+
+    // to stop the chain
+    //    let p=document.getElementById("parent");
+    //     p.addEventListener("click",(event)=>{
+    //         console.log("parent clicked")
+    //     })
+
+    //     let c=document.getElementById("child");
+    //     c.addEventListener("click",(event)=>{
+    //         event.stopPropagation();//to stop the chain
+    //         console.log("child clicked")
+    //     })
+
+    //     let s=document.getElementById("subchild");
+    //     s.addEventListener("click",(event)=>{
+    //         console.log("subchild clicked")
+    //     })
+
+    //event capturing--same as event bubbiling but flow is different i.e top to bottom
+    let p=document.querySelector("#parent");
+        p.addEventListener("click",(event)=>{
+            console.log("parent clicked")
+        },true);
+
+        let c=document.querySelector("#child");
+        c.addEventListener("click",(event)=>{
+            console.log("child clicked")
+        },true);
+
+        let s=document.querySelector("#subchild");
+        s.addEventListener("click",(event)=>{
+            console.log("subchild clicked")
+        },true);
+
+    </script>
+    
+</body>
+</html>

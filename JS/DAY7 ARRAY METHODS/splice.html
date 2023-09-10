@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>splice</title>
+</head>
+<body>
+    <script>
+//splice()-->used to add/remove elements in array
+let arr=[10,20,30,40,50,60,70,80,90,100];
+arr.splice(4,3);
+document.write(arr,`<br>`);//10,20,30,40,80,90,100
+arr.splice(4,1);
+document.write(arr,`<br>`);//);//10,20,30,40,90,100
+arr.splice(0,1);
+document.write(arr,`<br>`);//20,30,40,90,100
+arr.splice(4,1);
+document.write(arr,`<br>`);//20,30,40,90
+
+arr.splice(3,0,50,60,70,80);//-->3 starting index number to number of elements to delete we add 50 60 70 80
+document.write(arr,`<br>`);//20,30,40,50,60,70,80,90
+arr.splice(0,1,10,20);
+document.write(arr,`<br>`);//10,20,30,40,50,60,70,80,90
+arr.splice(8,1,90,100);
+document.write(arr,`<br>`);//10,20,30,40,50,60,70,80,90,100
+    </script>
+</body>
+</html>

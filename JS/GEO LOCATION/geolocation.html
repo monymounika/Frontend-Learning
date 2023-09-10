@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Location API</title>
+</head>
+<body>
+    <!-- <button onclick="get_location()">GET LOCATION</button><br>
+    <p id="res"></p>   -->
+    <script>
+        // const get_location=()=>{
+        //     navigator.geolocation.getCurrentPosition(function(position){
+        //         document.getElementById("res").innerHTML=position.coords.latitude+"..."+position.coords.longitude;
+        //     });
+        // };
+
+        let str="Hello Excelr";
+        console.log(str.length);//14
+
+        console.log(str.charAt(6))//e
+
+        let str1="excelr";
+        let str2="javascript";
+        let str3=str1.concat(str2);
+        console.log(str3);//excelr javascript
+        
+        console.log(str.toLocaleUpperCase());//HELLO EXCELR
+
+        console.log(str.toLocaleLowerCase());//hello excelr
+
+        console.log(str1.startsWith("excelr"));//true
+
+        console.log(str1.endsWith("R"));//false
+
+
+        //string methods in javascript
+        //JavaScript provides a variety of built-in methods for working with strings. Here are some commonly used string methods:
+
+// 1. *`length`:* Returns the length of the string.
+
+//    javascript
+//    const text = "Hello, world!";
+//    const length = text.length; // 13
+   
+
+// 2. *`charAt(index)`:* Returns the character at the specified index.
+
+//    javascript
+//    const text = "Hello";
+//    const char = text.charAt(1); // 'e'
+   
+
+// 3. *`concat(str1, str2, ...)`:* Combines two or more strings and returns a new string.
+
+//    javascript
+//    const str1 = "Hello, ";
+//    const str2 = "world!";
+//    const combined = str1.concat(str2); // "Hello, world!"
+   
+
+// 4. *`toUpperCase()`:* Converts the string to uppercase.
+
+//    javascript
+//    const text = "Hello";
+//    const uppercaseText = text.toUpperCase(); // "HELLO"
+   
+
+// 5. *`toLowerCase()`:* Converts the string to lowercase.
+
+//    javascript
+//    const text = "WORLD";
+//    const lowercaseText = text.toLowerCase(); // "world"
+   
+
+// 6. *`trim()`:* Removes whitespace from the beginning and end of the string.
+
+//    javascript
+//    const text = "   Hello, world!   ";
+//    const trimmedText = text.trim(); // "Hello, world!"
+   
+
+// 7. *`substring(startIndex, endIndex)`:* Extracts a portion of the string between the given indices.
+
+//    javascript
+//    const text = "Hello, world!";
+//    const substring = text.substring(7, 12); // "world"
+   
+
+// 8. *`indexOf(searchValue, startIndex)`:* Returns the index of the first occurrence of the specified substring.
+
+//    javascript
+//    const text = "Hello, world!";
+//    const index = text.indexOf("world"); // 7
+   
+
+// 9. *`replace(oldValue, newValue)`:* Replaces occurrences of a substring with another substring.
+
+//    javascript
+//    const text = "Hello, world!";
+//    const newText = text.replace("world", "there"); // "Hello, there!"
+   
+
+// 10. *`split(separator)`:* Splits the string into an array of substrings based on the given separator.
+
+//     javascript
+//     const text = "apple,banana,orange";
+//     const fruitsArray = text.split(","); // ["apple", "banana", "orange"]
+    
+
+// 11. *`startsWith(searchString, position)`:* Checks if the string starts with the specified substring.
+
+//     javascript
+//     const text = "Hello, world!";
+//     const startsWithHello = text.startsWith("Hello"); // true
+    
+
+// 12. *`endsWith(searchString, position)`:* Checks if the string ends with the specified substring.
+
+//     javascript
+//     const text = "Hello, world!";
+//     const endsWithWorld = text.endsWith("world!"); // true
+    
+
+// These are just a few of the many string methods available in JavaScript. They allow you to manipulate, search, and extract information from strings in various ways.
+
+
+// 1. *`new Date()`:* Creates a new `Date` object representing the current date and time.
+
+//    javascript
+//    const currentDate = new Date();
+   
+
+// 2. *`Date(year, month, day, hour, minute, second, millisecond)`:* Creates a new `Date` object for a specific date and time.
+
+//    javascript
+//    const specificDate = new Date(2023, 7, 25); // August 25, 2023
+   
+
+// 3. *`getDate()`:* Returns the day of the month (1-31) for the specified date.
+
+//    javascript
+//    const currentDate = new Date();
+//    const dayOfMonth = currentDate.getDate();
+   
+
+// 4. *`getMonth()`:* Returns the month (0-11) for the specified date.
+
+//    javascript
+//    const currentDate = new Date();
+//    const month = currentDate.getMonth();
+   
+
+// 5. *`getFullYear()`:* Returns the year (four digits) for the specified date.
+
+//    javascript
+//    const currentDate = new Date();
+//    const year = currentDate.getFullYear();
+   
+
+// 6. *`getHours()`, `getMinutes()`, `getSeconds()`, `getMilliseconds()`:* Returns the hours, minutes, seconds, and milliseconds for the specified date.
+
+//    javascript
+//    const currentDate = new Date();
+//    const hours = currentDate.getHours();
+//    const minutes = currentDate.getMinutes();
+//    const seconds = currentDate.getSeconds();
+//    const milliseconds = currentDate.getMilliseconds();
+   
+
+// 7. *`getDay()`:* Returns the day of the week (0-6, where 0 represents Sunday) for the specified date.
+
+//    javascript
+//    const currentDate = new Date();
+//    const dayOfWeek = currentDate.getDay();
+   
+
+// 8. *`toString()`:* Returns a string representation of the date.
+
+//    javascript
+//    const currentDate = new Date();
+//    const dateString = currentDate.toString();
+   
+
+// 9. *`toLocaleDateString()`, `toLocaleTimeString()`, `toLocaleString()`:* Returns date, time, or combined date and time strings in a localized format.
+
+//    javascript
+//    const currentDate = new Date();
+//    const localDate = currentDate.toLocaleDateString();
+//    const localTime = currentDate.toLocaleTimeString();
+//    const localDateTime = currentDate.toLocaleString();
+   
+
+// 10. *`getTime()`:* Returns the number of milliseconds since January 1, 1970 (Unix timestamp).
+
+//     javascript
+//     const currentDate = new Date();
+//     const timestamp = currentDate.getTime();
+    
+
+// 11. *`setFullYear(year)`, `setMonth(month)`, `setDate(day)`, etc.:* Sets specific components of the date.
+
+//     javascript
+//     const currentDate = new Date();
+//     currentDate.setFullYear(2024);
+//     currentDate.setMonth(11); // December (0-based)
+//     currentDate.setDate(15);
+    
+
+// 12. *`getTimezoneOffset()`:* Returns the time zone offset in minutes.
+
+//     javascript
+//     const currentDate = new Date();
+//     const timezoneOffset = currentDate.getTimezoneOffset();
+    
+
+// These are just a few of the many methods available in the `Date` object in JavaScript. They allow you to work with dates, times, and various components of dates effectively. Keep in mind that dates and times can be quite complex due to considerations like time zones, daylight saving time, and formatting.
+</script>
+</body>
+</html>

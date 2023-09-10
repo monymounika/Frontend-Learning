@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulations</title>
+</head>
+<body>
+    <input type="text" id="fname" placeholder="enter first name"><br><br>
+    <input type="text" id="lname" placeholder="enter last name"><br><br>
+    <button onclick="display()">Display</button><br><br>
+    <p id="my_para"></p>
+
+    <script>
+        const display=()=>{
+            let x=document.getElementById("fname").value;
+            let y=document.getElementById("lname").value;
+            document.getElementById("my_para").innerHTML=x+"..."+y;
+        }
+    </script>
+</body>
+</html>

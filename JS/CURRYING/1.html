@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currying</title>
+</head>
+<body>
+    <script>
+        //regular logic
+        let add=(a,b)=>{
+            return a+b;
+        }
+        let res=add(5,5);
+        document.write(res);
+
+        //curry logic
+        let curryAdd=(a)=>{
+            return(b)=>{
+                return a+b;
+            }
+        }
+        let inner_func=curryAdd(5);
+        let res1=inner_func(5);
+        document.write(res1);
+    </script>
+</body>
+</html>

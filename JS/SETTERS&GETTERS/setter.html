@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setters</title>
+</head>
+<body>
+    <script>
+        //to set the data
+        let obj={
+            key1:0,
+            set my_fun(value){//set is predefined keyword
+                this.key1=value;
+            }
+        }
+        obj.my_fun=100;
+        console.log(obj.key1);
+    </script>
+</body>
+</html>

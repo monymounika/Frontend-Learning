@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+</head>
+<body>
+    <script>
+//filter()---> it is used to apply the conditions in array
+let arr=[10,20,30,40,50];
+let new_arr=arr.filter((element,index)=>{
+    return element>=30;
+});
+document.write(new_arr);//30,40,50
+
+let array=[1000,2000,3000,4000,5000];
+let new_array=array.filter((element,index)=>{
+    return element<=2000;
+});
+document.write(new_array);//1000 2000
+    </script>
+</body>
+</html>

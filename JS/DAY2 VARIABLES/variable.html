@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+</head>
+<body>
+    <script>
+        //string
+        var sub=`Fullstack`;
+        var msg=`Welcome to ${sub}`;
+        document.write(msg, `<br>`);
+
+        var frontend=`ReactJS`;
+        var backend=`Spring Boot`;
+        var database=`CassandraDB`;
+        var cloud=`AWS with Devops`;
+        var fullstack=`collection of ${frontend},  ${backend}, ${database},  and ${cloud}`;
+        document.write(fullstack, `<br>`);
+
+        //number
+        var num1=100;
+        var num2=200;
+        var num3=num1+num2;
+        var num4=num1-num2;
+        var num5=num1*num2;
+        var num6=num1/num2;
+        document.write(`addition   ...${num3} <br> substraction   ...${num4}<br> multipication   ...${num5}<br> division  ... ${num6}`);
+
+        //boolean
+        var flag=true;
+        var flag1=false;
+        document.write(flag, `<br>` ,flag1, `<br>`);
+        document.write(true+true, `<br>`);
+        document.write(true+false, `<br>`);
+        document.write(true*true, `<br>`);
+        document.write(true/false, `<br>`);
+
+        //ternary operator
+        flag?document.write(`java`, `<br>`):document.write(`react`, `<br>`);
+        flag1?document.write(`java`, `<br>`):document.write(`react`, `<br>`);
+
+        9>8>6?document.write(`java`, `<br>`):document.write(`react`, `<br>`);
+
+        9<8<1?document.write(`java`, `<br>`):document.write(`react`, `<br>`);
+
+        //undefined
+        var x;
+        document.write(x,`<br>`);
+
+        //null
+        var y=null;
+        document.write(y,`<br>`);
+
+       //bigint
+       var large=12345675869708976543236132435465768798867987090801234567890876541234567899876543212345678909876543n
+       document.write(large,`<br>`);
+
+        //symbol
+        var security=Symbol(100);
+        document.write(security);  
+
+
+        var security=Symbol(200);
+        document.write(security.description);//it will give the output when we give the description otherwise it will not display the output
+
+    </script>
+</body>
+</html>

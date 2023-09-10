@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combination os splice and findindex</title>
+</head>
+<body>
+    <script>
+//combination of splice and findIndex
+
+let arr=[1,2,3,4,5];
+//delete element 3 with finfIndex() and splice()
+arr.splice(arr.findIndex((element,index)=>{
+    return element==3;
+}),1);
+document.write(arr);//[1,2,4,5]
+
+//delete element 3 with finfIndex() and splice()
+let arr1=[1,2,3,4,5];
+arr1.splice(arr1.findIndex((element,index)=>{
+    return element==1;
+}),1);
+document.write(arr1);//[2,3,4,5]
+
+let arr2=[1,2,3,4,5];
+arr2.splice(arr2.findIndex((element,index)=>{
+    return element==2;
+}),1);
+document.write(arr2);//[1,3,4,5]
+
+let arr3=[1,2,3,4,5];
+arr3.splice(arr3.findIndex((element,index)=>{
+    return element==4;
+}),1);
+document.write(arr3);//[1,2,3,5]
+
+let arr4=[1,2,3,4,5];
+arr4.splice(arr4.findIndex((element,index)=>{
+    return element==5;
+}),1);
+document.write(arr4);//[1,2,3,4]
+
+// //delete element  with findIndex() and splice()
+
+let arr5=[1,2,3,4,5];
+arr5.splice(arr5.findIndex((element,index)=>{
+    return element==3;
+}),1);
+document.write(arr5,`<br>`);//[1,2,4,5]
+arr5.splice(arr5.findIndex((element,index)=>{
+    return element==4;
+}),1);
+document.write(arr5,`<br>`);//[1,2,5]
+arr5.splice(arr5.findIndex((element,index)=>{
+    return element==2;
+}),1);
+document.write(arr5);//1,5
+
+    </script>
+</body>
+</html>

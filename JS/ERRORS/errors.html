@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Errors</title>
+</head>
+<body>
+    <script>
+        //risky code
+        // fun_one();
+        try{
+            fun_one();
+        }catch(err){
+            console.log(err);
+        }finally{
+            console.log("always executes after either try block/ catch block")
+        }
+    </script>
+</body>
+</html>

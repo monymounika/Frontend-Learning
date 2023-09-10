@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fill</title>
+</head>
+<body>
+    <script>
+//fill()--->it is used to replace the element or fill the element with required output
+let arr1=[10,20,30,40,50];
+let arr2=arr1.fill(100,0);
+document.write(arr2,`<br>`);//100,100,100,100,100
+let arr3=arr1.fill(200,1,2);
+document.write(arr3,`<br>`);//100,200,100,100,100---[1 is included 2 is excluded]
+let arr4=arr1.fill(300,2,3);
+document.write(arr4,`<br>`);//100,200,300,100,100
+let arr5=arr1.fill(400,3,4);
+document.write(arr5,`<br>`);//100,200,300,400,100
+let arr6=arr1.fill(500,4);
+document.write(arr6,`<br>`);//100,200,300,400,500
+    </script>
+</body>
+</html>

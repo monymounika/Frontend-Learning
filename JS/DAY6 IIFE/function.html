@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+    <script>
+
+// example-1
+        //arrow function returns array of objects
+        
+        // let fun_one=()=>{
+        //     return [{"p_id":111,"p_name":"p_one","p_cost":100000},
+        //             {"p_id":222,"p_name":"p_one","p_cost":100000},
+        //             {"p_id":111,"p_name":"p_one","p_cost":100000},
+        //             {"p_id":111,"p_name":"p_one","p_cost":100000},
+        //             {"p_id":111,"p_name":"p_one","p_cost":100000}]
+        // };
+        // let arr=fun_one();
+        //     document.write(`<table class="table table-bordered table-striped table-danger">
+        //         <tr>
+        //             <th>p_id</th>
+        //             <th>p_name</th>
+        //             <th>p_cost</th>
+        //         </tr>
+        //         `);
+            
+        // arr.forEach(element => {
+        //     document.write(`<tr>
+        //         <td>${element.p_id}</td>
+        //         <td>${element.p_name}</td>
+        //         <td>${element.p_cost}</td>
+        //         </tr>`);
+        // });
+        // document.write(`</table>`);
+
+//example-2
+        // let fun_one=()=>{
+        //     return [{"id":111,"name":"emp1","age":30,"image":"http://reqres.in/img/faces/1-image.jpg"},
+        //         {"id":222,"name":"emp2","age":32,"image":"https://reqres.in/img/faces/8-image.jpg"},
+        //         {"id":333,"name":"emp3","age":34,"image":"https://reqres.in/img/faces/1-image.jpg"},
+        //         {"id":444,"name":"emp4","age":36,"image":"https://reqres.in/img/faces/2-image.jpg"},
+        //         {"id":555,"name":"emp5","age":38,"image":"https://reqres.in/img/faces/3-image.jpg"}];
+        // };
+        // let arr=fun_one();
+        //     document.write(`<table class="table table-bordered table-striped table-danger">
+        //         <tr>
+        //             <th>id</th>
+        //             <th>name</th>
+        //             <th>age</th>
+        //             <th>image</th>
+        //         </tr>
+        //         `);
+            
+        // arr.forEach(element => {
+        //     document.write(`<tr>
+        //         <td>${element.id}</td>
+        //         <td>${element.name}</td>
+        //         <td>${element.age}</td>
+        //        <td><img src=${element.image}</td>
+
+        //         </tr>`);
+        // });
+        // document.write(`</table>`);
+
+//example-3
+        // default parameters in functions
+        // while defining the functions we will initilize parameters
+        // this concept introduced in "ES6" version
+        // let func_one=(param1="ReactJS",param2="NodeJS",param3="MongoDB")=>{
+        //     document.write(param1, param2, param3, `<br>`);
+        // }
+        // func_one();                     //ReactJSNodeJSMongoDB
+        // func_one("ReactJS18.X");        //ReactJS18.XNodeJSMongoDB
+        // func_one(undefined,undefined,undefined);  //ReactJSNodeJSMongoDB
+        // func_one(null,null,null);       //nullnullnull
+
+
+
+//example-4
+        // let func_one=(param1,param2="hello",param3="welcome")=>{
+        //     document.write(param1,param2,param3,`<br>`);
+        // }
+        // func_one();
+        // func_one(undefined,undefined,undefined);
+        // func_one(null,null,null);
+
+
+//example-5
+        //rest parameter in functions
+        //geathring multiple values possible with rest parameter
+        //rest parameter introduced in ES6 version
+        // let func_one=(...param1)=>{
+        //     console.log(param1);
+        // }
+        // func_one(100,200,300,400,500);      //[100, 200, 300, 400, 500]
+        // func_one();                         //[]
+        // func_one(undefined,undefined);      //[undefined, undefined]
+        // func_one(null,null);                //[null, null]
+
+//example-6
+
+        //     let func_one=(param1,param2="Hello",...param3)=>{
+        //     console.log(param1, param2, param3);
+        // }
+        // func_one();     //undefined Hello []
+        // func_one(undefined,undefined,undefined);    //undefined Hello [undefined]
+        // func_one(null,null,null);       //null null [null]
+
+
+//example-7
+    //arrow function
+    // instead of using {} and return we can like this
+    // let func_one=()=>"ExcelR";
+    //     let res=func_one();
+    //     document.write(res);        //ExcelR
+
+
+//example-8
+    // let func_one=par1=>par1*par1;
+    //     let res=func_one(100);
+    //     document.write(res);
+
+
+//example-9
+            // let obj={
+            //     "name":"",
+            //     "func_one":function(){
+            //       let  inner_func=()=>{
+            //             this.name="ExcelR"
+            //       }
+            //       inner_func();
+            //     }
+                
+            // }
+            // obj.func_one();
+            // document.write(obj.name); //ExcelR
+    </script>
+</body>
+</html>

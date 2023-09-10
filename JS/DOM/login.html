@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Manipulations</title>
+    </head>
+    <body>
+        <!-- <input type="text" id="uname"> <br><br>
+        <input type="password" id="upwd"> <br><br>
+        <button onclick="login()">Login</button>
+        <br>
+        <p id="res"></p>
+        <script>
+            const login=()=>{
+                let x=document.getElementById("uname").value;
+                let y=document.getElementById("upwd").value;
+                x=="excelr" && y=="excelr@123"?document.getElementById("res").innerHTML="Login Success":document.getElementById("res").innerHTML="Login Fail";
+            }
+        </script> -->
+
+        <!-- <input type="text" id="box1"><br><br>
+        <button onclick="display()">Display</button><br><br>
+        <input type="text" id="box2"><br><br>
+        <script>
+           const display=()=>{
+            document.getElementById("box2").value="welcome to"+document.getElementById("box1").value;
+           }
+        </script> -->
+<!-- 
+        <input type="text" id="box1"><br><br>
+        <input type="text" id="box2"><br><br>
+
+        <button onclick="display()">Display</button><br><br>
+        <input type="text" id="box3"><br><br>
+        <script>
+           const display=()=>{
+            document.getElementById("box3").value="welcome to"+document.getElementById("box1").value+document.getElementById("box2").value;
+           }
+        </script> -->
+
+        <!-- <input type="text" id="box1"><br><br>
+        <input type="text" id="box2">
+        <script>
+            document.getElementById("box1").value="excelr"
+            document.getElementById("box2").value="java fullstack"
+
+        </script> -->
+
+<!--eg-1-->
+        <!-- <input type="text" id="box1" ><br><br>
+        <input type="text" id="box2"><br><br>
+        <input type="text" id="box3"><br><br>
+
+        <button onclick="fullname()">fullname</button><br><br>
+        <script>
+           const fullname=()=>{
+            document.getElementById("box3").value=""+document.getElementById("box1").value+document.getElementById("box2").value;
+           }
+        </script> -->
+
+<!--eg-2-->
+    <!-- <input type="number" id="fname" ><br><br>
+    <input type="number" id="lname" ><br><br>
+    <button onclick="ADD()">ADD</button>
+    <button onclick="SUB()">SUB</button>
+    <button onclick="MUL()">MUL</button>
+    <button onclick="DIV()">DIV</button>
+
+    <p id="my_para"></p>
+        <script>
+            const ADD=()=>{
+                let x=parseInt(document.getElementById("fname").value);
+                let y=parseInt(document.getElementById("lname").value);
+                document.getElementById("my_para").innerHTML=x+y;
+            }
+            const SUB=()=>{
+                let x=parseInt(document.getElementById("fname").value);
+                let y=parseInt(document.getElementById("lname").value);
+                document.getElementById("my_para").innerHTML=x-y;
+            }
+            const MUL=()=>{
+                let x=parseInt(document.getElementById("fname").value);
+                let y=parseInt(document.getElementById("lname").value);
+                document.getElementById("my_para").innerHTML=x*y;
+            }
+            const DIV=()=>{
+                let x=parseInt(document.getElementById("fname").value);
+                let y=parseInt(document.getElementById("lname").value);
+                document.getElementById("my_para").innerHTML=x/y;
+            }
+        </script> -->
+
+
+<!--eg-3-->
+        <!-- <input type="text" id="a"><br><br>
+        <input type="text" id="b"><br><br>
+        <button onclick="swap()">swap</button><br><br>
+        <input type="text" id="c"><br><br>
+        <input type="text" id="d"><br><br>
+    <script>
+
+            const swap=()=>{
+            document.getElementById("c").value=+document.getElementById("b").value;
+            document.getElementById("d").value=+document.getElementById("a").value;
+
+           }
+    </script> -->
+
+<!--eg-4-->
+    <!-- <input type="number" id="annual"><br><br>
+    <input type="number" id="monthly"><br><br>
+    <button onclick="calculate()">calculate</button>
+
+    <script>
+        const calculate=()=>{
+            let x=document.getElementById("annual").value;
+                document.getElementById("monthly").value=document.getElementById("monthly").innerHTML=x/12;
+        }
+    </script> -->
+<!--eg-5-->
+    <!-- <input type="number" id="p"><br><br>
+    <input type="number" id="q"><br><br>
+    <input type="number" id="r"><br><br>
+    <button onclick="product()">product</button>
+
+    <script>
+      const product=()=>{
+                let x=document.getElementById("p").value;
+                let y=document.getElementById("q").value;
+                document.getElementById("r").value=document.getElementById("r").innerHTML=x*y;
+
+            }
+    </script> -->
+
+<!--eg-6-->
+    <!-- <input type="text" id="p_name"><br><br>
+    <input type="number" id="p_cost"><br><br>
+    <input type="number" id="quantity"><br><br>
+
+    <button onclick="calculate()">calculate</button><br><br>
+
+    <script>
+        const calculate=()=>{
+            let x=document.getElementById("p_name").value;
+            let y=document.getElementById("p_cost").value;
+            let z=document.getElementById("quantity").value;
+            document.getElementById("f_cost").value=document.getElementById("f_cost").innerHTML=y*z;
+        }
+    </script>
+    <input type="number" id="f_cost"><br><br> -->
+
+<!--eg-7-->
+    <!-- <input type="number" id="s1"><br><br>
+    <input type="number" id="s2"><br><br>
+    <input type="number" id="s3"><br><br>
+    <input type="number" id="total">
+    <button onclick="Total()">TOT</button><br><br>
+    <input type="number" id="avg">
+    <button onclick="Average()">AVG</button><br><br>
+
+    <script>
+        const Total=()=>{
+            let x=parseInt(document.getElementById("s1").value);
+            let y=parseInt(document.getElementById("s2").value);
+            let z=parseInt(document.getElementById("s3").value);
+            document.getElementById("total").value=document.getElementById("total").innerHTML=x+y+z;
+        }
+        const Average=()=>{
+            let x=parseInt(document.getElementById("s1").value);
+            let y=parseInt(document.getElementById("s2").value);
+            let z=parseInt(document.getElementById("s3").value);
+            document.getElementById("avg").value=document.getElementById("avg").innerHTML=x+y+z/3;
+
+        }
+    </script> -->
+
+<!--eg-8-->
+
+    <!-- <input type="number" id="loan_amount"><br><br>
+    <input type="number" id="interest_rate"><br><br>
+    <input type="number" id="time_period"><br><br>
+    <input type="number" id="interest_amount"><br><br>
+    <input type="number" id="final_amount"><br><br>
+    <button onclick="Interest_Amount()">INTEREST AMT</button>
+    <button onclick="Final_Amount()">FINAL AMT</button>
+
+    <script>
+         const Interest_Amount=()=>{
+            let x=parseInt(document.getElementById("loan_amount").value);
+            let y=parseInt(document.getElementById("interest_rate").value);
+            let z=parseInt(document.getElementById("time_period").value);
+            let i=parseInt(document.getElementById("interest_amount").value);
+            let f=parseInt(document.getElementById("final_amount").value);
+            document.getElementById("interest_amount").value=document.getElementById("interest_amount").innerHTML=y/ (12 * 100);
+        }
+        const Final_Amount=()=>{
+            let x=parseInt(document.getElementById("loan_amount").value);
+            let y=parseInt(document.getElementById("interest_rate").value);
+            let z=parseInt(document.getElementById("time_period").value);
+            let i=parseInt(document.getElementById("interest_amount").value);
+            let f=parseInt(document.getElementById("final_amount").value);
+            // document.getElementById("final_amount").value=document.getElementById("final_amount").innerHTML=;
+
+        } 
+        </script> -->
+
+<!--eg-9-->
+
+    <input type="text" id="product_name"><br><br>
+    <input type="number" id="product_cost"><br><br>
+    <input type="number" id="GST_%"><br><br>
+    <input type="number" id="GST_Amt"><br><br>
+    <button onclick="Gst_Amount()">GstAmt</button>
+    <button onclick="Final_Cost()">FinalCost</button><br><br>
+    <input type="number" id="final_cost"><br><br>
+
+    <script>
+        const Gst_Amount=()=>{
+           let x=parseInt(document.getElementById("product_name").value);
+           let y=parseInt(document.getElementById("product_cost").value);
+           let z=parseInt(document.getElementById("GST_%").value);
+           let gst=parseInt(document.getElementById("GST_Amt").value);
+           let final=parseInt(document.getElementById("final_cost").value);
+           document.getElementById("GST_Amt").value=document.getElementById("GST_Amt").innerHTML=y*(z/100);
+       }
+       const Final_Costt=()=>{
+        let x=parseInt(document.getElementById("product_name").value);
+           let y=parseInt(document.getElementById("product_cost").value);
+           let z=parseInt(document.getElementById("GST_%").value);
+           let gst=parseInt(document.getElementById("GST_Amt").value);
+           let final=parseInt(document.getElementById("final_cost").value);
+           document.getElementById("final_cost").value=document.getElementById("final_cost").innerHTML=y+gst;
+        // document.getElementById("final_cost").value=""+document.getElementById("product_cost").value+document.getElementById("GST_Amt").value;
+
+
+       } 
+       </script>
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

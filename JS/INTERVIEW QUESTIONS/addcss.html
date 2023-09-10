@@ -1,0 +1,46 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add css</title>
+    <style>
+        .c1{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <p id="my_paragraph">Hello,excelr</p>
+    <button id="my_btn">Apply css</button>
+    <script>
+        let my_paragraph=document.getElementById("my_paragraph");
+        let my_btn=document.getElementById("my_btn");
+        my_btn.addEventListener("click",function(){
+            my_paragraph.classList.add("c1");
+        });
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add css</title>
+</head>
+<body>
+    <p id="my_paragraph">Hello, Welcome to fullstack</p>
+    <button id="add_btn">Add</button>
+    <button id="remove_btn">Remove</button>
+    <script>
+        document.getElementById("add_btn").addEventListener("click",function(){
+            document.getElementById("my_paragraph").style.color="red";
+        });
+        document.getElementById("remove_btn").addEventListener("click",function(){
+            document.getElementById("my_paragraph").style.color="";
+        });
+    </script>
+</body>
+</html>

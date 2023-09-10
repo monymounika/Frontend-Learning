@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sort</title>
+</head>
+<body>
+    <script>
+//sort()-->it is used to arrange the array elments either ascending order or decending order
+let arr1=[10,20,30,40,50];
+let arr2=arr1.sort((num1,num2)=>{
+    return num1-num2;
+});
+document.write(arr2);//10,20,30,40,50
+let arr3=arr1.sort((num1,num2)=>{
+    return num2-num1;
+});
+document.write(arr3);//50,40,30,20,10
+
+let array1=[10,100,10000,1000,200,20,2000,2];
+let array2=array1.sort((num1,num2)=>{
+    return num1-num2;
+});
+document.write(array2,`<br>`);//2,10,20,100,200,1000,2000,10000
+//find the 2nd min element 
+document.write(array2[1],`<br>`);
+
+let array3=array1.sort((num1,num2)=>{
+    return num2-num1;
+});
+document.write(array3,`<br>`);//10000,2000,1000,200,100,20,10,2
+//find the 2nd max element
+document.write(array3[1])
+    </script>
+</body>
+</html>

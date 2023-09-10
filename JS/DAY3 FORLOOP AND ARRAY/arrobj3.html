@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ass-2
+            var arrobj3=[{"e_id":111,"e_name":"emp_one","e_sal":10000,"e_designation":"jr engr"},
+                     {"e_id":222,"e_name":"emp_two","e_sal":20000,"e_designation":"sr engr"},
+                     {"e_id":333,"e_name":"emp_three","e_sal":30000,"e_designation":"team lead"},
+                     {"e_id":444,"e_name":"emp_four","e_sal":40000,"e_designation":"manager"},
+                     {"e_id":555,"e_name":"emp_five","e_sal":50000,"e_designation":"architect"}];
+            document.write(`<table border="1"
+                                align="center"
+                                cellspacing="10px"
+                                cellpadding="10px">
+                            <tr>
+                                <th>e_id</th>
+                                <th>e_name</th>
+                                <th>e_sal</th>
+                                <th>e_desgination</th>
+                            </tr>`);
+            arrobj3.forEach((element,index)=>{
+            document.write(`<tr>
+                <td>${element.e_id}</td>
+                <td>${element.e_name}</td>
+                <td>${element.e_sal}</td>
+                <td>${element.e_designation}</td>
+                </tr>`);
+            });
+
+
+
+
+        
+    </script>
+</body>
+</html>

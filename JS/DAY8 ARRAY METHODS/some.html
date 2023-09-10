@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some</title>
+</head>
+<body>
+    <script>
+//some()-->atleast one element satisfies the conditions then it will return true otherwise false
+let arr1=[10,20,30,40,50];
+let res1=arr1.some((element,index)=>{
+    return element<=10;
+});
+document.write(res1);//true
+
+let res2=arr1.some((element,index)=>{
+    return element<10;
+});
+document.write(res2)//false
+
+
+
+let arr2=[100,200,300];
+let res3=arr2.some((element,index)=>{
+    return element<=500;
+})
+document.write(res3);//true
+let res4=arr2.some((element,index)=>{
+    return element<100;
+})
+document.write(res4);//false
+    </script>
+</body>
+</html>

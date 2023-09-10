@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web worker</title>
+    <script src="add.js"></script>
+    <script src="sub.js"></script>
+    <script src="mul.js"></script>
+    <script src="div.js"></script>
+
+</head>
+<body>
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+    <script>
+        if(window.Worker){//to check if it supports or not
+            let addThred=new Worker("add.js");
+            addThred.postMessage({"num1":10,"num2":20});
+            addThred.onmessage=function({data}){
+                document.getElementById("add").innerHTML=data;
+            }
+            let subThred=new Worker("sub.js");
+            subThred.postMessage({num1:100,num2:70});
+            subThred.onmessage=function({data}){
+                document.getElementById("sub").innerHTML=data;
+            }
+            let mulThred=new Worker("mul.js");
+            mulThred.postMessage({"num1":10,"num2":10});
+            mulThred.onmessage=function({data}){
+                document.getElementById("mul").innerHTML=data;
+            }
+            let divThred=new Worker("div.js");
+            divThred.postMessage({num1:100,num2:50});
+            divThred.onmessage=function({data}){
+                document.getElementById("div").innerHTML=data;
+            }
+
+        }else{
+            console.log("web worker not supported by this browser")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr=[10,20,30,40,50];
+//arr[]; --->uncaught typeerror
+//arr=[100,200,300,400,500];---->uncaught typeerror
+arr[0]=100;// we can modify single single variable
+arr[1]=200;
+arr[2]=300;
+arr[5]=600;
+for(var i=0 ;i<arr.length;i++){
+    document.write(arr[i],"<br>");
+}
+
+//example 2
+const obj={
+    "key1":"reactjs",
+    "key2":"spring",
+};
+obj.key1="reactjs18.x";
+obj.key3="nodejs";
+document.write(obj.key1,obj.key2,obj.key3);
+    </script>
+</body>
+</html>

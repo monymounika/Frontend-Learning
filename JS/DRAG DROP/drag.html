@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c1{
+            width: 900px;
+            height: 900px;
+            border:1px solid red;
+            border-radius:10px;
+        }
+        .c2{
+            display:flex;
+        }
+    </style>
+    <script>
+        function start_img(event){
+            event.dataTransfer.setData("my_key",event.target.id);
+        }
+        function test_func(event){
+            event.preventDefault();
+        }
+        function drop_img(event){
+            event.preventDefault();
+            let img=event.dataTransfer.getData("my_key");
+            event.target.appendChild(document.getElementById(img));
+        }
+    </script>
+</head>
+<body>
+   <div class="c2">
+    <img src="download.png" id="img_one" draggable="true" ondragstart="start_img(event)">
+    <div class="c1" id="my_div" ondrop="drop_img(event)" ondragover="test_func(event)"></div>
+   </div>
+</body>
+</html>

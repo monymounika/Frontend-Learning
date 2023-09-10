@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="add1.js"></script>
+    <script src="sub1.js"></script>
+    <script src="mul1.js"></script>
+    <script src="div1.js"></script>
+</head>
+<body>
+    <h1 id="res"></h1>
+    <!-- <script>
+        let Thread1=new Worker("add1.js");
+        let Thread2=new Worker("sub1.js");
+        Thread1.postMessage({"key1":10,"key2":20});
+        Thread1.onmessage=function({data}){
+            Thread2.postMessage({"key1":data,"key2":10});
+            Thread2.onmessage=function({data}){
+                document.getElementById("res").innerHTML=data;
+        }
+        }
+    </script> -->
+
+    <script>
+        let Thread1=new Worker("add1.js");
+        let Thread2=new Worker("sub1.js");
+        let Thread3=new Worker("mul1.js");
+        let Thread4=new Worker("div1.js");
+
+        Thread1.postMessage({"key1":10,"key2":20});
+        Thread1.onmessage=function({data}){//30
+            Thread2.postMessage({"key1":data,"key2":10});
+            Thread2.onmessage=function({data}){//20
+                Thread3.postMessage({"key1":data,"key2":10});
+                Thread3.onmessage=function({data}){//200
+                    Thread4.postMessage({"key1":data,"key2":10});
+                    Thread4.onmessage=function({data}){//20
+                        document.getElementById("res").innerHTML=data;
+        }
+            }
+                }
+                    }
+    </script>
+</body>
+</html>

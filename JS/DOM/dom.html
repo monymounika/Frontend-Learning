@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulations</title>
+</head>
+<body>
+    <!-- <p id="my_paragraph"></p>
+    <h1 id="my_h1"></h1>
+    <script>
+        document.getElementById("my_paragraph").innerHTML="Hello";
+        document.getElementById("my_h1").innerHTML="Hello";       
+    </script> -->
+
+    <!-- <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <script>
+        let allParagraphs=document.getElementsByTagName("p");
+        allParagraphs[0].innerHTML="paragraph1";
+        allParagraphs[1].innerHTML="paragraph2";
+        allParagraphs[2].innerHTML="paragraph3";
+        allParagraphs[3].innerHTML="paragraph4";
+        allParagraphs[4].innerHTML="paragraph5";
+        for(let my_headings of allHeadings){
+            my_heading.innerHTML="heading";
+        }
+
+    </script> -->
+
+    <!-- <p class="c1"></p>
+    <p class="c1"></p>
+    <p class="c1"></p>
+    <p class="c1"></p>
+    <p class="c1"></p>
+    <script>
+        let allparagraphs=document.getElementsByClassName("c1");
+        p.innerHTML="Hello";
+    </script> -->
+
+    <!-- <h1 class="my_h1"></h1>
+    <h1 class="my_h1"></h1>
+    <h1 class="my_h1"></h1>
+    <h1 class="my_h1"></h1>
+    <h1 class="my_h1"></h1>
+    <script>
+        let allparagraphs=document.getElementsByClassName("my_h1");
+        p.innerHTML="Hello";
+    </script> -->
+    
+    <p>paragraph1</p>
+    <p>paragraph2</p>
+    <p>paragraph3</p>
+    <p>paragraph4</p>
+    <p>paragraph5</p>
+    <!-- <script>
+        let p=document.querySelector("p");
+        p.style.color="red";
+    </script> -->
+    <script>
+        let allp=document.querySelectorAll("p")
+        for(let p of allp){
+            p.style.color="red";
+        }
+    </script>
+</body>
+</html>
